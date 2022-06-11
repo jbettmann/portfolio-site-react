@@ -1,0 +1,59 @@
+/* Header container */
+.page-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 40px;
+  
+}
+
+/* logo {jb} */
+.logo {
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 100%;
+  max-width: 65px;
+  object-fit: contain;
+}
+
+/* navigation and logo top */
+.page-header__item {
+  flex: 0 1 200px; /* sets sizes for logo and nav list */
+}
+
+/* target is last item in navigation list */
+.page-header__item:last-child {
+  flex-grow: 1; /* allows to take up rest of space available */
+  text-align: right; /* makes right aligned */
+}
+
+/* nav. list */
+.navigation-list {
+  list-style-type: none; /* removes bullet points */
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: var(--header-font-weight);
+  font-family: var(--header-font), sans-serif;
+  font-size: var(--nav-font-size);
+}
+
+/* targets each navigation iteam */
+.navigation-list li {
+  display: inline-block; /* aligns nav list into row */
+  margin-left: 15px; /* puts 15px margins(spaces) between list iteams */
+}
+
+.navigation-list__item {
+  text-decoration: none; /* removes underline from nav list names */
+}
+
+.navigation-list__item:hover,
+.havigation-list__item:focus {
+  text-decoration: overline; /* applies overline to nav bar when hovered over */
+}
+
+.navigation-list__item--active {
+  text-decoration: overline; /* Overlining name the page its on */
+}

@@ -1,0 +1,40 @@
+/* home page profile container layout */
+.homepage {
+  display: flex;
+  justify-content: center;
+  margin: auto 0; /* centers profile div vertically with auto top-bottom */
+}
+
+.homepage__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* index page portrait */
+.profile__portrait {
+  float: left; /* floats image left on page */
+  width: 250px;
+  height: auto;
+  margin-right: 40px; /* space between image and text */
+  border-radius: 50%; /* rounds corners of image to make circle */
+}
+
+.homepage-button__container {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+.homepage-button {
+  margin: 0.5rem;
+}
+
+.middle {
+  background-color: #cda94b;
+}
+
+.dark {
+  background-color: #b38f32;
+}

@@ -1,0 +1,120 @@
+:root {
+  --primary-color: #234442; /* dark paint green */
+  --secondary-color: #e29ea9; /* light pink */
+  --secondary-color-2: #0f2117; /* dark green */
+  --logo-pink: #a77374; /* dark pink */
+  --logo-yellow: #d8bc73; /* mustard yellow */
+  --main-background-color: #fff; /* white */
+  --light-purple: #d4c2e7;
+  --light-gray: #d6d6d6;
+  --black: #000;
+  --teal: #22bdc4;
+  --body-font: "Lato";
+  --header-font: "PT sans";
+  --body-font-size: 16px;
+  --body-font-small: 14px;
+  --icon-size: 12px;
+  --header-font-size: 30px;
+  --secondary-header-font-size: 20px;
+  --nav-font-size: 18px;
+  --body-font-weight: 400;
+  --header-font-weight: 700;
+}
+
+* {
+  box-sizing: border-box; /* Makes all elements fit on screen */
+}
+
+body {
+  background-color: var(--main-background-color);
+  font-family: var(--body-font), sans-serif;
+  font-weight: 300;
+  font-size: var(--body-font-size); /* Sets the font size to 16pz */
+  line-height: 1.6; /* Sets the line-height to 1.6 */
+  height: 100vh; /* gives body a height equivalent to viewport size */
+  display: flex; /* allows container footer to have margin:auto and be at bottom of page */
+  flex-direction: column; /* makes container a column */
+  align-items: center; /* centers everything horizontaly */
+}
+
+.container {
+  width: 90vw;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-family: var(--header-font), sans-serif;
+  font-size: var(--header-font-size);
+  font-weight: var(--header-font-weight);
+  font-variant: normal;
+}
+
+h2 {
+  font-family: var(--header-font), sans-serif;
+  font-size: var(--secondary-header-font-size);
+  font-weight: var(--header-font-weight);
+  font-variant: normal;
+}
+
+a {
+  color: var(--black);
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  /* Overlining when hovering over a link */
+  text-decoration: none;
+}
+
+a:active {
+  /* selceted link */
+  color: var(--logo-yellow); /* yellow */
+}
+
+span {
+  font-style: italic;
+}
+
+button,
+.button,
+.form-group input[type="submit"] {
+  /* overwrites browser defaults and resets the broder */
+  border: none;
+
+  /* takes the font from the outer container */
+  font-family: var(--body-font), sans-serif;
+
+  /* styles the background color, font color and text decoration (unerline, etc.) of the button */
+  background-color: var(--logo-yellow); /* light pink */
+  color: var(--black); /* black */
+  text-decoration: none;
+
+  /* adds spacing to the button (this will be duscussed later) */
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.2s opacity;
+}
+
+.form-group input[type="submit"] {
+  box-shadow: 1px 2px 5px 1px var(--black);
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus,
+.form-group input[type="submit"]:hover,
+.form-group input[type="submit"]:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+
+  /* reduces the opacity of the button to 70% */
+  opacity: 0.7;
+  text-decoration: none;
+}
