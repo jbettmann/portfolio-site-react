@@ -1,0 +1,122 @@
+/* Work page h1 */
+.work-header {
+  width: 100vw;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  justify-items: center;
+  /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
+  grid-template-columns: 1fr;
+  grid-gap: 70px;
+  margin: 2.5rem;
+}
+
+.grid__item {
+  display: flex;
+  max-width: 1200px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.grid__content h2 {
+  margin: 0.8rem auto;
+}
+
+.grid__content p {
+  margin: 0.8rem auto;
+  padding-right: 2rem;
+}
+
+.grid__content-reverse {
+  display: inline-flex;
+  flex-direction: column;
+  text-align: right;
+  align-items: flex-end;
+}
+
+.grid__content-reverse h2,
+p {
+  margin: 0.8rem 0;
+}
+
+.p_reverse {
+  padding-left: 2rem;
+}
+
+.work_langs {
+  padding-left: 0.5rem;
+  width: 70%;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.work_langs p {
+  padding: 0.2rem;
+}
+
+.work_langs-reverse {
+  padding-right: 0;
+  padding-right: 0.5rem;
+}
+
+.work_langs-reverse p {
+  margin: 0 auto;
+  padding: 0.2rem;
+}
+
+.grid__link {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+
+.grid__link-reverse {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  margin-top: 0.8rem;
+  align-items: center;
+  padding-right: 0.5rem;
+}
+
+.grid__link a {
+  margin-right: 1rem;
+}
+
+.grid__link-reverse a {
+  margin-left: 1rem;
+}
+
+.grid__img-sm {
+  display: none;
+}
+
+.grid__img {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1 0 500px;
+}
+
+.grid__img-reverse {
+  justify-content: flex-start;
+}
+
+.grid__img > img {
+  width: 90%;
+}
+
+.grid__img > div {
+  width: 90%;
+}
+.chat-app_height {
+  width: 32%;
+}
+
+.work_links {
+  display: flex;
+  justify-content: space-around;
+}
