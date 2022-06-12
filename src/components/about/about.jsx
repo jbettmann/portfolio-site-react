@@ -49,11 +49,11 @@ export const AboutView = () => {
                 <div class="skills">
                   <div class="skill__item">
                     <p>html</p>
-                    <Image src="./img/skill_icons/html.svg" alt="html" />
+                    <Image src="img/skill_icons/html.svg" alt="html" />
                   </div>
                   <div class="skill__item">
                     <p>css</p>
-                    <Image src="./img/skill_icons/css.svg" alt="css" />
+                    <Image src="img/skill_icons/css.svg" alt="css" />
                   </div>
                   <div class="skill__item">
                     <p>javascript</p>
@@ -93,7 +93,7 @@ export const AboutView = () => {
               {/* <!-- profile photo (about photo) --> */}
               <div>
                 <img
-                  src="./img/about_pic.jpg"
+                  src="img/about_pic.jpg"
                   alt="side porfolio of Jordan outside in an urban city"
                   class="about__portrait"
                 />
