@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./homepage.css";
 
 export const Homepage = () => {
@@ -23,15 +24,15 @@ export const Homepage = () => {
                 <div className="homepage-button__container">
                   {/* <!-- directs use to about page --> */}
                   <div className="homepage-button">
-                    <a href="about.html" className="button">
+                    <Link to="about" className="button">
                       About Me
-                    </a>
+                    </Link>
                   </div>
                   {/* <!-- directs user to work page --> */}
                   <div className="homepage-button">
-                    <a href="work.html" className="button middle">
+                    <Link to="work" className="button middle">
                       Check out my work
-                    </a>
+                    </Link>
                   </div>
                   {/* <!-- sends email --> */}
                   <div className="homepage-button">

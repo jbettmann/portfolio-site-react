@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Image } from "react-bootstrap";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import { Nav, Navbar } from "react-bootstrap";
+import { NavLink, Link } from "react-router-dom";
 
 import "./navbar.css";
 
@@ -10,32 +10,24 @@ export const NavigationBar = () => {
     <Navbar expand="lg">
       <Container className="page-header">
         {/* <!-- Add Logo here --> */}
-        <Navbar.Brand className="logo page-header__item" href="index.html">
+        <Navbar.Brand as={Link} to={"/"} className="logo page-header__item">
           <Image src="img/logo/logo.svg" alt="Jordan Bettmann's logo" />
         </Navbar.Brand>
         {/* <!-- Start of Navigation bar --> */}
         <Nav className="page-header__item">
-          <Nav.Link
-            href="about.html"
-            role="menuitem"
-            className="navigation-list__item"
-          >
+          <NavLink to="about" role="menuitem" className="navigation-list__item">
             About
-          </Nav.Link>
-          <Nav.Link
-            href="work.html"
-            role="menuitem"
-            className="navigation-list__item"
-          >
+          </NavLink>
+          <NavLink to="work" role="menuitem" className="navigation-list__item">
             Work
-          </Nav.Link>
-          <Nav.Link
-            href="contact.html"
+          </NavLink>
+          <NavLink
+            to="contact"
             role="menuitem"
             className="navigation-list__item"
           >
             Contact
-          </Nav.Link>
+          </NavLink>
         </Nav>
       </Container>
     </Navbar>

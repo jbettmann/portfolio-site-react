@@ -1,12 +1,15 @@
 import "./App.css";
 import React from "react";
 import { Col, Row, Container } from "react-bootstrap";
-import { MainView } from "./main-view/main-view";
+import { MainView } from "./components/main-view/main-view";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <MainView />
+      <BrowserRouter>
+        <MainView />
+      </BrowserRouter>
     </div>
   );
 }
