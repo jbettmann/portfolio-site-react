@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-site-react/static/css/main.712c0ad2.css",
+    "main.css": "/portfolio-site-react/static/css/main.1c6bb551.css",
     "main.js": "/portfolio-site-react/static/js/main.36a64c50.js",
     "static/js/787.42a8f168.chunk.js": "/portfolio-site-react/static/js/787.42a8f168.chunk.js",
     "static/media/myFlix_React.png": "/portfolio-site-react/static/media/myFlix_React.bd82cd0d337ab157ab20.png",
@@ -26,12 +26,12 @@
     "static/media/html.svg": "/portfolio-site-react/static/media/html.6c686c73f3b88f91f4f738ed4d2f1270.svg",
     "static/media/css.svg": "/portfolio-site-react/static/media/css.e0356af3ff794fb5e7f0692ceaadedea.svg",
     "static/media/angular.svg": "/portfolio-site-react/static/media/angular.29333813ce44dd540c1d914855747692.svg",
-    "main.712c0ad2.css.map": "/portfolio-site-react/static/css/main.712c0ad2.css.map",
+    "main.1c6bb551.css.map": "/portfolio-site-react/static/css/main.1c6bb551.css.map",
     "main.36a64c50.js.map": "/portfolio-site-react/static/js/main.36a64c50.js.map",
     "787.42a8f168.chunk.js.map": "/portfolio-site-react/static/js/787.42a8f168.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.712c0ad2.css",
+    "static/css/main.1c6bb551.css",
     "static/js/main.36a64c50.js"
   ]
 }
