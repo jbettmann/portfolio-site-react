@@ -15,21 +15,31 @@ export const NavigationBar = () => {
           <Logo />
         </Navbar.Brand>
         {/* <!-- Start of Navigation bar --> */}
-        <Nav className="page-header__item">
-          <NavLink to="about" role="menuitem" className="navigation-list__item">
-            About
-          </NavLink>
-          <NavLink to="work" role="menuitem" className="navigation-list__item">
-            Work
-          </NavLink>
-          <NavLink
-            to="contact"
-            role="menuitem"
-            className="navigation-list__item"
-          >
-            Contact
-          </NavLink>
-        </Nav>
+        <Container className="page-header__item ">
+          <Nav className="navigation-list">
+            <NavLink
+              to="about"
+              role="menuitem"
+              className="navigation-list__item"
+            >
+              About
+            </NavLink>
+            <NavLink
+              to="work"
+              role="menuitem"
+              className="navigation-list__item"
+            >
+              Work
+            </NavLink>
+            <NavLink
+              to="contact"
+              role="menuitem"
+              className="navigation-list__item"
+            >
+              Contact
+            </NavLink>
+          </Nav>
+        </Container>
       </Container>
     </Navbar>
   );
