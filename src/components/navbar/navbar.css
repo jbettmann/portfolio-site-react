@@ -47,6 +47,6 @@
 }
 
 .navigation-list__item:hover,
-.havigation-list__item:focus {
+.navigation-list__item:focus {
   text-decoration: overline; /* applies overline to nav bar when hovered over */
 }
