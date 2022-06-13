@@ -11,18 +11,14 @@ import "./main-view.css";
 
 export const MainView = () => {
   return (
-    <Container>
-      <Row>
-        <Col>
-          <NavigationBar fixed="top" />
-          <Routes>
-            <Route path="/" element={<Homepage />} />
-            <Route path="about" element={<AboutView />} />
-            <Route path="work" element={<WorkView />} />
-            <Route path="contact" element={<ContactView />} />
-          </Routes>
-        </Col>
-      </Row>
-    </Container>
+    <>
+      <NavigationBar fixed="top" />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="about" element={<AboutView />} />
+        <Route path="work" element={<WorkView />} />
+        <Route path="contact" element={<ContactView />} />
+      </Routes>
+    </>
   );
 };

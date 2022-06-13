@@ -1,6 +1,8 @@
 import React from "react";
 import { Col, Container, Row, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import about from "../../img/about_pic.jpg";
+import { Icon } from "../../icons";
 
 import "./about.css";
 
@@ -48,42 +50,36 @@ export const AboutView = () => {
                 <h2 id="skill__header">languages/skills</h2>
                 <div class="skills">
                   <div class="skill__item">
-                    <p>html</p>
-                    <Image src="img/skill_icons/html.svg" alt="html" />
+                    {/* <p>html</p> */}
+                    <Icon title="html" />
                   </div>
                   <div class="skill__item">
-                    <p>css</p>
-                    <Image src="img/skill_icons/css.svg" alt="css" />
+                    {/* <p>css</p> */}
+                    <Icon title="css" />
                   </div>
                   <div class="skill__item">
-                    <p>javascript</p>
-                    <img
-                      src="img/skill_icons/javascript.svg"
-                      alt="javascript"
-                    />
+                    {/* <p>javascript</p> */}
+                    <Icon title="javascript" />
                   </div>
                   <div class="skill__item">
-                    <p>node.js</p>
-                    <img src="img/skill_icons/node_js.svg" alt="node_js" />
+                    {/* <p>node.js</p> */}
+                    <Icon title="node_js" />
                   </div>
                   <div class="skill__item">
-                    <p>react</p>
-                    <img src="img/skill_icons/react.svg" alt="react" />
+                    {/* <p>react</p> */}
+                    <Icon title="react" />
                   </div>
                   <div class="skill__item">
-                    <p>angular</p>
-                    <img src="img/skill_icons/angular.svg" alt="angular" />
+                    {/* <p>angular</p> */}
+                    <Icon title="angular" />
                   </div>
                   <div class="skill__item">
-                    <p>bootstrap</p>
-                    <img src="img/skill_icons/bootstrap.svg" alt="bootstrap" />
+                    {/* <p>bootstrap</p> */}
+                    <Icon title="bootstrap" />
                   </div>
                   <div class="skill__item">
-                    <p>material</p>
-                    <img
-                      src="img/skill_icons/material.svg"
-                      alt="material design"
-                    />
+                    {/* <p>material</p> */}
+                    <Icon title="material design" />
                   </div>
                 </div>
               </div>
@@ -93,8 +89,8 @@ export const AboutView = () => {
               {/* <!-- profile photo (about photo) --> */}
               <div>
                 <img
-                  src="img/about_pic.jpg"
-                  alt="side porfolio of Jordan outside in an urban city"
+                  src={about}
+                  alt="Jordan out backpacking"
                   class="about__portrait"
                 />
               </div>

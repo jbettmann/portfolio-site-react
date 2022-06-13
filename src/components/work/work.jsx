@@ -1,14 +1,23 @@
 import React from "react";
-import { Col, Container, Row, Image } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import { Icon } from "../../icons";
 import "./work.css";
+import meet from "../../img/meet.png";
+import myFlix_Angular from "../../img/myFlix_Angular.png";
+import myFlix_database from "../../img/myFlix_database.png";
+import myFlix_React from "../../img/myFlix_React.png";
+import pokedex from "../../img/pokedex.png";
+import choice from "../../img/chat-app/chat-choice.jpeg";
+import chat_home from "../../img/chat-app/chat-home.PNG";
+import chatroom from "../../img/chat-app/chat-room.PNG";
 
 export const WorkView = () => {
+  console.log(meet);
   return (
     <Container>
       <Row>
-        <Col>
+        <Col lg={12}>
           <div>
             <div class="work-header">
               <h1>my projects</h1>
@@ -21,10 +30,7 @@ export const WorkView = () => {
                   <h2>PokeDex</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
                   <div class="grid__img-sm">
-                    <img
-                      src="img/pokedex.png"
-                      alt="screenshot of PokeDex app homepage"
-                    />
+                    <img src={pokedex} alt="PokeDex app homepage" />
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
                   <div class="work_langs">
@@ -35,19 +41,13 @@ export const WorkView = () => {
                       href="https://github.com/jbettmann/pokedex-app"
                       target="_blank"
                     >
-                      <img
-                        src="img/work-link_icons/github.svg"
-                        alt="PokeDex github repo"
-                      />
+                      <Icon title="github repo" />
                     </a>
                     <a
                       href="https://jbettmann.github.io/pokedex-app"
                       target="_blank"
                     >
-                      <img
-                        src="img/work-link_icons/live.svg"
-                        alt="live demo of PokeDex"
-                      />
+                      <Icon title="live demo" />
                     </a>
                   </div>
                   <p>
@@ -58,10 +58,7 @@ export const WorkView = () => {
                   </p>
                 </div>
                 <div class="grid__img">
-                  <img
-                    src="img/pokedex.png"
-                    alt="screenshot of PokeDex app homepage"
-                  />
+                  <img src={pokedex} alt="PokeDex app homepage" />
                 </div>
               </div>
 
@@ -73,8 +70,8 @@ export const WorkView = () => {
                   {/* <!-- displays only in 1000px and smaller screens --> */}
                   <div class="grid__img-sm sm-img__margin">
                     <img
-                      src="img/myFlix_database.png"
-                      alt="Screenshot of myFlix-api/database being tested in Postman"
+                      src={myFlix_database}
+                      alt="myFlix-api/database being tested in Postman"
                     />
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
@@ -86,10 +83,7 @@ export const WorkView = () => {
                       href="https://github.com/jbettmann/myFlix-app"
                       target="_blank"
                     >
-                      <img
-                        src="img/work-link_icons/github.svg"
-                        alt="myFlix API github repo"
-                      />
+                      <Icon title="github repo" />
                     </a>
                   </div>
                   <p class="p_reverse">
@@ -102,8 +96,8 @@ export const WorkView = () => {
                 </div>
                 <div class="grid__img grid__img-reverse">
                   <img
-                    src="img/myFlix_database.png"
-                    alt="Screenshot of myFlix-api/database being tested in Postman"
+                    src={myFlix_database}
+                    alt="myFlix-api/database being tested in Postman"
                   />
                 </div>
               </div>
@@ -114,10 +108,7 @@ export const WorkView = () => {
                   <h2>myFlix App (React)</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
                   <div class="grid__img-sm">
-                    <img
-                      src="img/myFlix_React.png"
-                      alt="screenshot of myFlix React homepage"
-                    />
+                    <img src={myFlix_React} alt="myFlix React homepage" />
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
                   <div class="work_langs">
@@ -128,19 +119,13 @@ export const WorkView = () => {
                       href="https://github.com/jbettmann/myFlix-clent"
                       target="_blank"
                     >
-                      <img
-                        src="img/work-link_icons/github.svg"
-                        alt="myFlix React github repo"
-                      />
+                      <Icon title="github repo" />
                     </a>
                     <a
                       href="https://bettsmyflix.netlify.app/login"
                       target="_blank"
                     >
-                      <img
-                        src="img/work-link_icons/live.svg"
-                        alt="live demo of myFlix React"
-                      />
+                      <Icon title="live demo" />
                     </a>
                   </div>
                   <p>
@@ -153,10 +138,7 @@ export const WorkView = () => {
                   </p>
                 </div>
                 <div class="grid__img">
-                  <img
-                    src="img/myFlix_React.png"
-                    alt="screenshot of myFlix React homepage"
-                  />
+                  <img src={myFlix_React} alt="myFlix React homepage" />
                 </div>
               </div>
 
@@ -167,10 +149,7 @@ export const WorkView = () => {
                   <h2>Meet App</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
                   <div class="grid__img-sm sm-img__margin">
-                    <img
-                      src="img/meet.png"
-                      alt="screenshot of Meet app homepage"
-                    />
+                    <img src={meet} alt="Meet app homepage" />
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
                   <div class="work_langs work_langs-reverse">
@@ -178,16 +157,10 @@ export const WorkView = () => {
                   </div>
                   <div class="grid__link-reverse">
                     <a href="https://github.com/jbettmann/meet" target="_blank">
-                      <img
-                        src="img/work-link_icons/github.svg"
-                        alt="myFlix API github repo"
-                      />
+                      <Icon title="github repo" />
                     </a>
                     <a href="https://jbettmann.github.io/meet/" target="_blank">
-                      <img
-                        src="img/work-link_icons/live.svg"
-                        alt="live demo of meet app"
-                      />
+                      <Icon title="live demo" />
                     </a>
                   </div>
                   <p class="p_reverse">
@@ -199,10 +172,7 @@ export const WorkView = () => {
                   </p>
                 </div>
                 <div class="grid__img grid__img-reverse">
-                  <img
-                    src="img/meet.png"
-                    alt="screenshot of Meet app homepage"
-                  />
+                  <img src={meet} alt="Meet app homepage" />
                 </div>
               </div>
 
@@ -214,18 +184,18 @@ export const WorkView = () => {
                   <div class="grid__img-sm">
                     <div>
                       <img
-                        src="img/chat-app/chat-home.PNG"
-                        alt="screenshot of chat app homepage"
+                        src={chat_home}
+                        alt="chat app homepage"
                         class="chat-app_height"
                       />
                       <img
-                        src="img/chat-app/chat-room.PNG"
-                        alt="screenshot of chat app chatroom page"
+                        src={chatroom}
+                        alt="chat app chatroom page"
                         class="chat-app_height"
                       />
                       <img
-                        src="img/chat-app/chat-choice.jpeg"
-                        alt="screenshot of chat app send option page"
+                        src={choice}
+                        alt="chat app send option page"
                         class="chat-app_height"
                       />
                     </div>
@@ -239,10 +209,7 @@ export const WorkView = () => {
                       href="https://github.com/jbettmann/chat-app"
                       target="_blank"
                     >
-                      <img
-                        src="img/work-link_icons/github.svg"
-                        alt="chat app github repo"
-                      />
+                      <Icon title="github repo" />
                     </a>
                   </div>
                   <p>
@@ -255,18 +222,18 @@ export const WorkView = () => {
                 <div class="grid__img">
                   <div>
                     <img
-                      src="img/chat-app/chat-home.PNG"
-                      alt="screenshot of chat app homepage"
+                      src={chat_home}
+                      alt="chat app homepage"
                       class="chat-app_height"
                     />
                     <img
-                      src="img/chat-app/chat-room.PNG"
-                      alt="screenshot of chat app chatroom page"
+                      src={chatroom}
+                      alt="chat app chatroom page"
                       class="chat-app_height"
                     />
                     <img
-                      src="img/chat-app/chat-choice.jpeg"
-                      alt="screenshot of chat app send option page"
+                      src={choice}
+                      alt="chat app send option page"
                       class="chat-app_height"
                     />
                   </div>
@@ -281,7 +248,7 @@ export const WorkView = () => {
                   {/* <!-- displays only in 1000px and smaller screens --> */}
                   <div class="grid__img-sm sm-img__margin">
                     <img
-                      src="img/myFlix_Angular.png"
+                      src={myFlix_Angular}
                       alt="myFlix-Angular-client app homepage"
                     />
                   </div>
@@ -296,19 +263,13 @@ export const WorkView = () => {
                       href="https://github.com/jbettmann/myFlix-Angular-client"
                       target="_blank"
                     >
-                      <img
-                        src="img/work-link_icons/github.svg"
-                        alt="myFlix app Angular github repo"
-                      />
+                      <Icon title="github repo" />
                     </a>
                     <a
                       href="https://jbettmann.github.io/myFlix-Angular-client/welcome"
                       target="_blank"
                     >
-                      <img
-                        src="img/work-link_icons/live.svg"
-                        alt="live demo of meet app"
-                      />
+                      <Icon title="live demo" />
                     </a>
                   </div>
                   <p class="p_reverse">
@@ -321,7 +282,7 @@ export const WorkView = () => {
                 </div>
                 <div class="grid__img grid__img-reverse">
                   <img
-                    src="img/myFlix_Angular.png"
+                    src={myFlix_Angular}
                     alt="myFlix-Angular-client app homepage"
                   />
                 </div>

@@ -1,7 +1,8 @@
 import React from "react";
-import { Container, Image } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { Nav, Navbar } from "react-bootstrap";
 import { NavLink, Link } from "react-router-dom";
+import { ReactComponent as Logo } from "../../img/logo/logo.svg";
 
 import "./navbar.css";
 
@@ -11,7 +12,7 @@ export const NavigationBar = () => {
       <Container className="page-header">
         {/* <!-- Add Logo here --> */}
         <Navbar.Brand as={Link} to={"/"} className="logo page-header__item">
-          <Image src="img/logo/logo.svg" alt="Jordan Bettmann's logo" />
+          <Logo />
         </Navbar.Brand>
         {/* <!-- Start of Navigation bar --> */}
         <Nav className="page-header__item">

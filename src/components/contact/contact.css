@@ -1,0 +1,18 @@
+.contact-info {
+  padding: 30px 0;
+  margin: 50px auto;
+  text-align: center;
+  color: var(--black);
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0 30px;
+}
+
+.social-icons {
+  margin: 0 1rem;
+}

@@ -1,6 +1,5 @@
 /* Work page h1 */
 .work-header {
-  width: 100vw;
   text-align: center;
 }
 
@@ -120,3 +119,78 @@ p {
   display: flex;
   justify-content: space-around;
 }
+
+/* ===================================
+       Screen sizes up to 500px
+  =================================== */
+  @media all and (max-width: 500px) {
+    
+    .work_langs {
+      width: 95%;
+    }
+  }
+  /* ===================================
+         Screen sizes up to 604px
+    =================================== */
+  @media all and (max-width: 604px) {
+ 
+    .grid {
+      margin: .2rem;
+    }
+  }
+  /* ====================================================
+        Screen sizes between 605px and 1000px
+  ====================================================== */
+  @media all and (min-width: 605px) and (max-width: 1000px) {
+    .grid {
+      margin: 4rem;
+    }
+  }
+
+  /* ===================================
+         Screen sizes up to 1000px
+    =================================== */
+  @media all and (max-width: 1000px) {
+   
+    .grid {
+      grid-gap: 20px;
+    }
+  
+    .grid__item {
+      flex-direction: column;
+    }
+  
+    .grid__content p {
+      padding-right: 0;
+    }
+  
+    .p_reverse {
+      padding-left: 0;
+    }
+  
+    .reverse {
+      flex-direction: column;
+    }
+    .grid__img-sm {
+      display: block;
+      flex: 0;
+    }
+  
+    .sm-img__margin {
+      margin: .8rem;
+    }
+  
+    .grid__img {
+      display: none;
+    }
+  
+    .grid__img-sm > img {
+      width: 100%;
+    }
+  
+    .grid__img-sm > div {
+      width: 100%;
+    }
+  
+    
+  }
