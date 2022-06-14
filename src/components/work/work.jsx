@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Icon } from "../../icons";
-import "./work.css";
+import "./work.sass";
 import meet from "../../img/meet.png";
 import myFlix_Angular from "../../img/myFlix_Angular.png";
 import myFlix_database from "../../img/myFlix_database.png";
@@ -112,7 +112,7 @@ export const WorkView = () => {
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
                   <div class="work_langs">
-                    <p> react / mongoDB / heroku / netlify / bootstrap </p>
+                    <p> react / mongoDB / redux / netlify / bootstrap </p>
                   </div>
                   <div class="grid__link">
                     <a
@@ -130,11 +130,11 @@ export const WorkView = () => {
                   </div>
                   <p>
                     This is the client-side single-page myFlix application built
-                    with React. Is displays responsive and rich UI components
-                    implemented with react-bootstrap. Users can search and
-                    access information about different movies, their
-                    descriptions, directors, actors and genres. The application
-                    makes all its call to the myFlix RESTful API.
+                    with React. Redux is used to manage the global state of the
+                    application. Users can search and access information about
+                    different movies, their descriptions, directors, actors and
+                    genres. The application makes all its call to the myFlix
+                    RESTful API.
                   </p>
                 </div>
                 <div class="grid__img">

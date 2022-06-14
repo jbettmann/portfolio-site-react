@@ -4,7 +4,7 @@ import { Nav, Navbar } from "react-bootstrap";
 import { NavLink, Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../img/logo/logo.svg";
 
-import "./navbar.css";
+import "./navbar.sass";
 
 export const NavigationBar = () => {
   return (
