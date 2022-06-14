@@ -13,12 +13,16 @@ export const MainView = () => {
   return (
     <>
       <NavigationBar fixed="top" />
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="about" element={<AboutView />} />
-        <Route path="work" element={<WorkView />} />
-        <Route path="contact" element={<ContactView />} />
-      </Routes>
+      <Row>
+        <Col>
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="about" element={<AboutView />} />
+            <Route path="work" element={<WorkView />} />
+            <Route path="contact" element={<ContactView />} />
+          </Routes>
+        </Col>
+      </Row>
     </>
   );
 };

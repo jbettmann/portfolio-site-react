@@ -4,11 +4,11 @@ import { Nav, Navbar } from "react-bootstrap";
 import { NavLink, Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../img/logo/logo.svg";
 
-import "./navbar.sass";
+import "./navbar.css";
 
 export const NavigationBar = () => {
   return (
-    <Navbar expand="lg">
+    <Navbar fixed="top" expand="lg">
       <Container className="page-header">
         {/* <!-- Add Logo here --> */}
         <Navbar.Brand as={Link} to={"/"} className="logo page-header__item">

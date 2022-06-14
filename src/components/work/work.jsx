@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Icon } from "../../icons";
-import "./work.sass";
+import "./work.scss";
 import meet from "../../img/meet.png";
 import myFlix_Angular from "../../img/myFlix_Angular.png";
 import myFlix_database from "../../img/myFlix_database.png";
