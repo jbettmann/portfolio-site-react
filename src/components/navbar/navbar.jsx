@@ -4,14 +4,19 @@ import { Nav, Navbar } from "react-bootstrap";
 import { NavLink, Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../img/logo/logo.svg";
 
-import "./navbar.css";
+import "./navbar.scss";
 
-export const NavigationBar = () => {
+export const NavigationBar = ({ showFooter, hideFooter }) => {
   return (
-    <Navbar fixed="top" expand="lg">
+    <Navbar>
       <Container className="page-header">
         {/* <!-- Add Logo here --> */}
-        <Navbar.Brand as={Link} to={"/"} className="logo page-header__item">
+        <Navbar.Brand
+          as={Link}
+          to={"/"}
+          className="logo page-header__item"
+          onClick={showFooter} //sets footer to true in main-view state. shows Footer
+        >
           <Logo />
         </Navbar.Brand>
         {/* <!-- Start of Navigation bar --> */}
@@ -21,6 +26,7 @@ export const NavigationBar = () => {
               to="about"
               role="menuitem"
               className="navigation-list__item"
+              onClick={showFooter} //sets footer to true in main-view state. shows Footer
             >
               About
             </NavLink>
@@ -28,6 +34,7 @@ export const NavigationBar = () => {
               to="work"
               role="menuitem"
               className="navigation-list__item"
+              onClick={showFooter} //sets footer to true in main-view state. shows Footer
             >
               Work
             </NavLink>
@@ -35,6 +42,7 @@ export const NavigationBar = () => {
               to="contact"
               role="menuitem"
               className="navigation-list__item"
+              onClick={hideFooter} //sets footer to false in main-view state. hides Footer only in ContactView
             >
               Contact
             </NavLink>

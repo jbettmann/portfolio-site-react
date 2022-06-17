@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Row, Container } from "react-bootstrap";
 import { Routes, Route, Redirect } from "react-router-dom"; // BrowserRouter used to implement state-based routing. HashRouter used for hash-based routing.
 import { Homepage } from "../homepage/homepage";
@@ -6,23 +6,37 @@ import { AboutView } from "../about/about";
 import { WorkView } from "../work/work";
 import { ContactView } from "../contact/contact";
 import { NavigationBar } from "../navbar/navbar";
+import { Footer } from "../footer/footer";
 
-import "./main-view.css";
+import "./main-view.scss";
 
 export const MainView = () => {
+  const [footer, setFooter] = useState(true);
+
+  // sets footer to false and hides Footer Component when ContactView is displayed
+  let hideFooter = () => {
+    setFooter(false);
+  };
+
+  // sets footer to true and shows Footer Component
+  let showFooter = () => {
+    setFooter(true);
+  };
+
   return (
     <>
-      <NavigationBar fixed="top" />
-      <Row>
-        <Col>
-          <Routes>
-            <Route path="/" element={<Homepage />} />
-            <Route path="about" element={<AboutView />} />
-            <Route path="work" element={<WorkView />} />
-            <Route path="contact" element={<ContactView />} />
-          </Routes>
-        </Col>
-      </Row>
+      <NavigationBar
+        hideFooter={hideFooter}
+        showFooter={showFooter}
+        fixed="top"
+      />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="about" element={<AboutView />} />
+        <Route path="work" element={<WorkView />} />
+        <Route path="contact" element={<ContactView />} />
+      </Routes>
+      {footer && <Footer />}
     </>
   );
 };
