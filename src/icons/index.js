@@ -12,6 +12,7 @@ import { GitHub } from "./github";
 import { LinkedIn } from "./linkedin";
 import { GitHubWorkLink } from "./github-work-link";
 import { LiveDemo } from "./live-demo";
+import { Twitter } from "./twitter";
 
 export const Icon = (props) => {
   switch (props.title) {
@@ -41,6 +42,8 @@ export const Icon = (props) => {
       return <LinkedIn {...props} />;
     case "live demo":
       return <LiveDemo {...props} />;
+    case "twitter":
+      return <Twitter {...props} />;
     default:
       return <div />;
   }
