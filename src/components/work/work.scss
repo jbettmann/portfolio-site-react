@@ -1,3 +1,28 @@
+$primary-color: #234442; /* dark paint green */
+$secondary-color: #e29ea9; /* light pink */
+$secondary-color-2: #0f2117; /* dark green */
+$logo-pink: #a77374; /* dark pink */
+$logo-yellow: #d8bc73; /* mustard yellow */
+$main-background-color: #fff; /* white */
+$light-purple: #d4c2e7;
+$light-gray: #d6d6d6;
+$black: #000;
+$teal: #22bdc4;
+$body-font: "Lato";
+$header-font: "PT sans";
+$body-font-size: 16px;
+$body-font-small: 14px;
+$icon-size: 12px;
+$header-font-size: 30px;
+$secondary-header-font-size: 20px;
+$nav-font-size: 18px;
+$body-font-weight: 400;
+$header-font-weight: 700;
+
+* {
+  box-sizing: border-box; /* Makes all elements fit on screen */
+}
+
 /* Work page h1 */
 .work-header {
   text-align: center;
@@ -49,7 +74,7 @@ p {
 .work_langs {
   padding-left: 0.5rem;
   width: 70%;
-  background-color: var(--primary-color);
+  background-color: $primary-color;
   color: #fff;
 }
 

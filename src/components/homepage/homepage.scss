@@ -1,3 +1,5 @@
+$logo-yellow: #d8bc73; /* mustard yellow */
+
 /* home page profile container layout */
 .homepage {
   display: flex;
@@ -31,10 +33,10 @@
   margin: 0.5rem;
 }
 
-.middle {
-  background-color: #cda94b;
+#middle {
+  background-color: darken($logo-yellow, 10%);
 }
 
-.dark {
-  background-color: #b38f32;
+#dark {
+  background-color: darken($logo-yellow, 20%);
 }

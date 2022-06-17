@@ -19,24 +19,24 @@ export const WorkView = () => {
       <Row>
         <Col lg={12}>
           <div>
-            <div class="work-header">
+            <div className="work-header">
               <h1>my projects</h1>
             </div>
-            <div class="grid">
+            <div className="grid">
               {/* <!-- Project 1 NORMAL--> */}
               {/* <!-- Grid items will live here --> */}
-              <div class="grid__item">
-                <div class="grid__content">
+              <div className="grid__item">
+                <div className="grid__content">
                   <h2>PokeDex</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
-                  <div class="grid__img-sm">
+                  <div className="grid__img-sm">
                     <img src={pokedex} alt="PokeDex app homepage" />
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
-                  <div class="work_langs">
+                  <div className="work_langs">
                     <p> html css / javascript / bootstrap / jQuery </p>
                   </div>
-                  <div class="grid__link">
+                  <div className="grid__link">
                     <a
                       href="https://github.com/jbettmann/pokedex-app"
                       target="_blank"
@@ -57,28 +57,28 @@ export const WorkView = () => {
                     details via a modal built with Bootstrap.
                   </p>
                 </div>
-                <div class="grid__img">
+                <div className="grid__img">
                   <img src={pokedex} alt="PokeDex app homepage" />
                 </div>
               </div>
 
               {/* <!-- Project 2 REVERSE --> */}
               {/* <!-- REVERSE layout for this. Referenced in style as "reverse" --> */}
-              <div class="grid__item reverse">
-                <div class="grid__content-reverse">
+              <div className="grid__item reverse">
+                <div className="grid__content-reverse">
                   <h2>myFlix API</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
-                  <div class="grid__img-sm sm-img__margin">
+                  <div className="grid__img-sm sm-img__margin">
                     <img
                       src={myFlix_database}
                       alt="myFlix-api/database being tested in Postman"
                     />
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
-                  <div class="work_langs work_langs-reverse">
+                  <div className="work_langs work_langs-reverse">
                     <p> node.js / express / mongoDB / mongoose </p>
                   </div>
-                  <div class="grid__link-reverse">
+                  <div className="grid__link-reverse">
                     <a
                       href="https://github.com/jbettmann/myFlix-app"
                       target="_blank"
@@ -86,7 +86,7 @@ export const WorkView = () => {
                       <Icon title="github repo" />
                     </a>
                   </div>
-                  <p class="p_reverse">
+                  <p className="p_reverse">
                     This REST API is the server side component to the myFlix
                     App. Node.js, MongoDB and Express of the MERN stack were
                     used to build this API and database. This project
@@ -94,7 +94,7 @@ export const WorkView = () => {
                     and JWT (token-based) authentication and data security.
                   </p>
                 </div>
-                <div class="grid__img grid__img-reverse">
+                <div className="grid__img grid__img-reverse">
                   <img
                     src={myFlix_database}
                     alt="myFlix-api/database being tested in Postman"
@@ -103,18 +103,18 @@ export const WorkView = () => {
               </div>
 
               {/* <!-- Project 3 NORMAL --> */}
-              <div class="grid__item">
-                <div class="grid__content">
+              <div className="grid__item">
+                <div className="grid__content">
                   <h2>myFlix App (React)</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
-                  <div class="grid__img-sm">
+                  <div className="grid__img-sm">
                     <img src={myFlix_React} alt="myFlix React homepage" />
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
-                  <div class="work_langs">
+                  <div className="work_langs">
                     <p> react / mongoDB / redux / netlify / bootstrap </p>
                   </div>
-                  <div class="grid__link">
+                  <div className="grid__link">
                     <a
                       href="https://github.com/jbettmann/myFlix-clent"
                       target="_blank"
@@ -137,25 +137,25 @@ export const WorkView = () => {
                     RESTful API.
                   </p>
                 </div>
-                <div class="grid__img">
+                <div className="grid__img">
                   <img src={myFlix_React} alt="myFlix React homepage" />
                 </div>
               </div>
 
               {/* <!-- Project 4 REVERSE --> */}
               {/* <!-- REVERSE layout for this. Referenced in style as "reverse" --> */}
-              <div class="grid__item reverse">
-                <div class="grid__content-reverse">
+              <div className="grid__item reverse">
+                <div className="grid__content-reverse">
                   <h2>Meet App</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
-                  <div class="grid__img-sm sm-img__margin">
+                  <div className="grid__img-sm sm-img__margin">
                     <img src={meet} alt="Meet app homepage" />
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
-                  <div class="work_langs work_langs-reverse">
+                  <div className="work_langs work_langs-reverse">
                     <p> react / MUI / TDD / jest / puppeteer / aws </p>
                   </div>
-                  <div class="grid__link-reverse">
+                  <div className="grid__link-reverse">
                     <a href="https://github.com/jbettmann/meet" target="_blank">
                       <Icon title="github repo" />
                     </a>
@@ -163,7 +163,7 @@ export const WorkView = () => {
                       <Icon title="live demo" />
                     </a>
                   </div>
-                  <p class="p_reverse">
+                  <p className="p_reverse">
                     This serverless, PWA project was built with React using a
                     test-driven development technique. An OOP approach was taken
                     when implementing error alerts for users. This application
@@ -171,40 +171,40 @@ export const WorkView = () => {
                     Rechart to display data visualizations.
                   </p>
                 </div>
-                <div class="grid__img grid__img-reverse">
+                <div className="grid__img grid__img-reverse">
                   <img src={meet} alt="Meet app homepage" />
                 </div>
               </div>
 
               {/* <!-- Project 5 NORMAL --> */}
-              <div class="grid__item">
-                <div class="grid__content">
+              <div className="grid__item">
+                <div className="grid__content">
                   <h2>Chat App</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
-                  <div class="grid__img-sm">
+                  <div className="grid__img-sm">
                     <div>
                       <img
                         src={chat_home}
                         alt="chat app homepage"
-                        class="chat-app_height"
+                        className="chat-app_height"
                       />
                       <img
                         src={chatroom}
                         alt="chat app chatroom page"
-                        class="chat-app_height"
+                        className="chat-app_height"
                       />
                       <img
                         src={choice}
                         alt="chat app send option page"
-                        class="chat-app_height"
+                        className="chat-app_height"
                       />
                     </div>
                   </div>
                   {/* <!-- end of 1000px and smaller view --> */}
-                  <div class="work_langs">
+                  <div className="work_langs">
                     <p> react native / expo / google firebase / gifted chat </p>
                   </div>
-                  <div class="grid__link">
+                  <div className="grid__link">
                     <a
                       href="https://github.com/jbettmann/chat-app"
                       target="_blank"
@@ -219,22 +219,22 @@ export const WorkView = () => {
                     location.
                   </p>
                 </div>
-                <div class="grid__img">
+                <div className="grid__img">
                   <div>
                     <img
                       src={chat_home}
                       alt="chat app homepage"
-                      class="chat-app_height"
+                      className="chat-app_height"
                     />
                     <img
                       src={chatroom}
                       alt="chat app chatroom page"
-                      class="chat-app_height"
+                      className="chat-app_height"
                     />
                     <img
                       src={choice}
                       alt="chat app send option page"
-                      class="chat-app_height"
+                      className="chat-app_height"
                     />
                   </div>
                 </div>
@@ -242,23 +242,23 @@ export const WorkView = () => {
 
               {/* <!-- Project 6 REVERSE --> */}
               {/* <!-- REVERSE layout for this. Referenced in style as "reverse" --> */}
-              <div class="grid__item reverse">
-                <div class="grid__content-reverse">
+              <div className="grid__item reverse">
+                <div className="grid__content-reverse">
                   <h2>myFlix App (Angular)</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
-                  <div class="grid__img-sm sm-img__margin">
+                  <div className="grid__img-sm sm-img__margin">
                     <img
                       src={myFlix_Angular}
                       alt="myFlix-Angular-client app homepage"
                     />
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
-                  <div class="work_langs work_langs-reverse">
+                  <div className="work_langs work_langs-reverse">
                     <p>
                       angular / typescript / typedoc / jsdoc / angular material
                     </p>
                   </div>
-                  <div class="grid__link-reverse">
+                  <div className="grid__link-reverse">
                     <a
                       href="https://github.com/jbettmann/myFlix-Angular-client"
                       target="_blank"
@@ -272,7 +272,7 @@ export const WorkView = () => {
                       <Icon title="live demo" />
                     </a>
                   </div>
-                  <p class="p_reverse">
+                  <p className="p_reverse">
                     Using the myFlix REST API build in a previous project, this
                     client side version of the myFlix App was build with
                     Angular. The entire UI of the app was designed with Angular
@@ -280,7 +280,7 @@ export const WorkView = () => {
                     TypeDoc.
                   </p>
                 </div>
-                <div class="grid__img grid__img-reverse">
+                <div className="grid__img grid__img-reverse">
                   <img
                     src={myFlix_Angular}
                     alt="myFlix-Angular-client app homepage"

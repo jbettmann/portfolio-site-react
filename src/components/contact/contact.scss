@@ -1,0 +1,32 @@
+$primary-color: #234442; /* dark paint green */
+$secondary-color: #e29ea9; /* light pink */
+$secondary-color-2: #0f2117; /* dark green */
+$logo-pink: #a77374; /* dark pink */
+$logo-yellow: #d8bc73; /* mustard yellow */
+$main-background-color: #fff; /* white */
+$light-purple: #d4c2e7;
+$light-gray: #d6d6d6;
+$black: #000;
+
+* {
+  box-sizing: border-box; /* Makes all elements fit on screen */
+}
+
+.contact-info {
+  padding: 30px 0;
+  margin: 50px auto;
+  text-align: center;
+  color: $black;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0 30px;
+}
+
+.social-icons {
+  margin: 0 1rem;
+}

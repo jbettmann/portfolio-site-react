@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import about from "../../img/about_pic.jpg";
 import { Icon } from "../../icons";
 
-import "./about.css";
+import "./about.scss";
 
 export const AboutView = () => {
   return (

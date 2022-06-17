@@ -1,3 +1,28 @@
+$primary-color: #234442; /* dark paint green */
+$secondary-color: #e29ea9; /* light pink */
+$secondary-color-2: #0f2117; /* dark green */
+$logo-pink: #a77374; /* dark pink */
+$logo-yellow: #d8bc73; /* mustard yellow */
+$main-background-color: #fff; /* white */
+$light-purple: #d4c2e7;
+$light-gray: #d6d6d6;
+$black: #000;
+$teal: #22bdc4;
+$body-font: "Lato";
+$header-font: "PT sans";
+$body-font-size: 16px;
+$body-font-small: 14px;
+$icon-size: 12px;
+$header-font-size: 30px;
+$secondary-header-font-size: 20px;
+$nav-font-size: 18px;
+$body-font-weight: 400;
+$header-font-weight: 700;
+
+* {
+  box-sizing: border-box; /* Makes all elements fit on screen */
+}
+
 /* Header container */
 .page-header {
   display: flex;
@@ -33,15 +58,15 @@
   list-style-type: none; /* removes bullet points */
   text-decoration: none;
   margin-right: 20px;
-  font-weight: var(--header-font-weight);
-  font-family: var(--header-font), sans-serif;
-  font-size: var(--nav-font-size);
+  font-weight: $header-font-weight;
+  font-family: $header-font, sans-serif;
+  font-size: $nav-font-size;
 }
 
 .navigation-list__item {
   text-decoration: none; /* removes underline from nav list names */
   display: inline-block; /* aligns nav list into row */
-  margin-left: 15px; /* puts 15px margins(spaces) between list iteams */
+  margin-left: 15px; /* puts 15px margins(spaces between list iteams */
 }
 
 .navigation-list__item:hover,
