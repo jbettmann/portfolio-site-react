@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Icon } from "../../icons";
 
 import "./contact.scss";
 
-export const ContactView = () => {
+export const ContactView = ({ hideFooter }) => {
+  useEffect(() => {
+    //sets footer to false in main-view state. hides Footer only in ContactView
+    hideFooter();
+  });
+
   return (
     <Container>
       <Row>
