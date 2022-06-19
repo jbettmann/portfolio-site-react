@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.904cecb0.css",
-    "main.js": "/portfolio/static/js/main.79c8d389.js",
+    "main.css": "/portfolio/static/css/main.893e10e0.css",
+    "main.js": "/portfolio/static/js/main.50da2080.js",
     "static/js/787.42a8f168.chunk.js": "/portfolio/static/js/787.42a8f168.chunk.js",
     "static/media/myFlix_React.png": "/portfolio/static/media/myFlix_React.bd82cd0d337ab157ab20.png",
     "static/media/chat-home.PNG": "/portfolio/static/media/chat-home.6b6cd6f2a7171bc05a5c.PNG",
@@ -27,12 +27,12 @@
     "static/media/html.svg": "/portfolio/static/media/html.6c686c73f3b88f91f4f738ed4d2f1270.svg",
     "static/media/css.svg": "/portfolio/static/media/css.e0356af3ff794fb5e7f0692ceaadedea.svg",
     "static/media/angular.svg": "/portfolio/static/media/angular.29333813ce44dd540c1d914855747692.svg",
-    "main.904cecb0.css.map": "/portfolio/static/css/main.904cecb0.css.map",
-    "main.79c8d389.js.map": "/portfolio/static/js/main.79c8d389.js.map",
+    "main.893e10e0.css.map": "/portfolio/static/css/main.893e10e0.css.map",
+    "main.50da2080.js.map": "/portfolio/static/js/main.50da2080.js.map",
     "787.42a8f168.chunk.js.map": "/portfolio/static/js/787.42a8f168.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.904cecb0.css",
-    "static/js/main.79c8d389.js"
+    "static/css/main.893e10e0.css",
+    "static/js/main.50da2080.js"
   ]
 }
