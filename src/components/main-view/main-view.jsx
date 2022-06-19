@@ -34,7 +34,10 @@ export const MainView = () => {
         <Route path="/" element={<Homepage />} />
         <Route path="about" element={<AboutView />} />
         <Route path="work" element={<WorkView />} />
-        <Route path="contact" element={<ContactView />} />
+        <Route
+          path="contact"
+          element={<ContactView hideFooter={hideFooter} />}
+        />
       </Routes>
       {footer && <Footer />}
     </>
