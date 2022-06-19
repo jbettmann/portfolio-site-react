@@ -118,6 +118,12 @@ p {
   display: none;
 }
 
+.grid__img-sm {
+  img {
+    cursor: pointer;
+  }
+}
+
 .grid__img {
   display: flex;
   align-items: center;
@@ -129,15 +135,18 @@ p {
   justify-content: flex-start;
 }
 
-.grid__img > img {
-  width: 90%;
+.grid__img {
+  img {
+    cursor: pointer;
+    width: 90%;
+  }
 }
 
 .grid__img > div {
   width: 90%;
 }
 .chat-app_height {
-  width: 32%;
+  width: 32% !important;
 }
 
 .work_links {

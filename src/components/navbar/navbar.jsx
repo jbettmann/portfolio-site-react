@@ -42,7 +42,6 @@ export const NavigationBar = ({ showFooter, hideFooter }) => {
               to="contact"
               role="menuitem"
               className="navigation-list__item"
-              onClick={hideFooter} //sets footer to false in main-view state. hides Footer only in ContactView
             >
               Contact
             </NavLink>

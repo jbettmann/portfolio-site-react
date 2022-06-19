@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Icon } from "../../icons";
@@ -11,13 +11,24 @@ import pokedex from "../../img/pokedex.png";
 import choice from "../../img/chat-app/chat-choice.jpeg";
 import chat_home from "../../img/chat-app/chat-home.PNG";
 import chatroom from "../../img/chat-app/chat-room.PNG";
+import { ModalView } from "../modal/modal";
 
 export const WorkView = () => {
-  console.log(meet);
+  const [show, setShow] = useState(false);
+  const [image, setImage] = useState(null);
+
+  const getImage = (event) => {
+    let image = event.target.src;
+    console.log(image);
+    setImage(image);
+    setShow(true);
+  };
+
   return (
     <Container>
       <Row>
         <Col lg={12}>
+          <ModalView show={show} image={image} onHide={() => setShow(false)} />
           <div>
             <div className="work-header">
               <h1>my projects</h1>
@@ -30,7 +41,11 @@ export const WorkView = () => {
                   <h2>PokeDex</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
                   <div className="grid__img-sm">
-                    <img src={pokedex} alt="PokeDex app homepage" />
+                    <img
+                      src={pokedex}
+                      alt="PokeDex app homepage"
+                      onClick={getImage}
+                    />
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
                   <div className="work_langs">
@@ -58,7 +73,11 @@ export const WorkView = () => {
                   </p>
                 </div>
                 <div className="grid__img">
-                  <img src={pokedex} alt="PokeDex app homepage" />
+                  <img
+                    src={pokedex}
+                    alt="PokeDex app homepage"
+                    onClick={getImage}
+                  />
                 </div>
               </div>
 
