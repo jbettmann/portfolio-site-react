@@ -4,7 +4,8 @@ $logo-yellow: #d8bc73; /* mustard yellow */
 .homepage {
   display: flex;
   justify-content: center;
-  margin: auto 0; /* centers profile div vertically with auto top-bottom */
+  /* margin: auto 0; centers profile div vertically with auto top-bottom */
+  margin-bottom: 25%;
 }
 
 .homepage__content {

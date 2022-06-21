@@ -8,7 +8,7 @@ import "./footer.scss";
 export const Footer = () => {
   return (
     // <!-- Footer with links to social media profiles -->
-    <Navbar fixed="bottom" className="page-footer">
+    <Navbar className="page-footer">
       <p>Find me on</p>
       <div className="social-media">
         <a

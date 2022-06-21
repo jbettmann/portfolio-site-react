@@ -57,7 +57,6 @@ $header-font-weight: 700;
 .navigation-list {
   list-style-type: none; /* removes bullet points */
   text-decoration: none;
-  margin-right: 20px;
   font-weight: $header-font-weight;
   font-family: $header-font, sans-serif;
   font-size: $nav-font-size;
@@ -72,4 +71,10 @@ $header-font-weight: 700;
 .navigation-list__item:hover,
 .navigation-list__item:focus {
   text-decoration: overline; /* applies overline to nav bar when hovered over */
+}
+
+/* BOOTSTRAP OVERRIDE */
+
+.navbar-nav {
+  justify-content: flex-end;
 }
