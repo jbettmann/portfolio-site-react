@@ -41,11 +41,7 @@ export const WorkView = () => {
                   <h2>PokeDex</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
                   <div className="grid__img-sm">
-                    <img
-                      src={pokedex}
-                      alt="PokeDex app homepage"
-                      onClick={getImage}
-                    />
+                    <img src={pokedex} alt="PokeDex" onClick={getImage} />
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
                   <div className="work_langs">
@@ -73,11 +69,7 @@ export const WorkView = () => {
                   </p>
                 </div>
                 <div className="grid__img">
-                  <img
-                    src={pokedex}
-                    alt="PokeDex app homepage"
-                    onClick={getImage}
-                  />
+                  <img src={pokedex} alt="PokeDex" onClick={getImage} />
                 </div>
               </div>
 
@@ -90,7 +82,8 @@ export const WorkView = () => {
                   <div className="grid__img-sm sm-img__margin">
                     <img
                       src={myFlix_database}
-                      alt="myFlix-api/database being tested in Postman"
+                      alt="myFlix-api tested in Postman"
+                      onClick={getImage}
                     />
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
@@ -116,7 +109,8 @@ export const WorkView = () => {
                 <div className="grid__img grid__img-reverse">
                   <img
                     src={myFlix_database}
-                    alt="myFlix-api/database being tested in Postman"
+                    alt="myFlix-api tested in Postman"
+                    onClick={getImage}
                   />
                 </div>
               </div>
