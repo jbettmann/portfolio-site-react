@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Modal, Button } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 
 import "./modal.scss";
 
@@ -13,14 +13,16 @@ export const ModalView = (props) => {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          {/* {props.image} */}
+          {props.image.alt}
         </Modal.Title>
       </Modal.Header>
       <Modal.Body id="body">
-        <img id="modal-image" src={props.image} />
+        <img id="modal-image" src={props.image.src} />
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
+        <button className="button" id="bs-btn__override" onClick={props.onHide}>
+          Close
+        </button>
       </Modal.Footer>
     </Modal>
   );

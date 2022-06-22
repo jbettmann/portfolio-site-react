@@ -15,10 +15,10 @@ import { ModalView } from "../modal/modal";
 
 export const WorkView = () => {
   const [show, setShow] = useState(false);
-  const [image, setImage] = useState(null);
+  const [image, setImage] = useState(true);
 
   const getImage = (event) => {
-    let image = event.target.src;
+    let image = event.target;
     console.log(image);
     setImage(image);
     setShow(true);
@@ -82,7 +82,7 @@ export const WorkView = () => {
                   <div className="grid__img-sm sm-img__margin">
                     <img
                       src={myFlix_database}
-                      alt="myFlix-api tested in Postman"
+                      alt="myFlix-API tested in Postman"
                       onClick={getImage}
                     />
                   </div>
@@ -109,7 +109,7 @@ export const WorkView = () => {
                 <div className="grid__img grid__img-reverse">
                   <img
                     src={myFlix_database}
-                    alt="myFlix-api tested in Postman"
+                    alt="myFlix-API tested in Postman"
                     onClick={getImage}
                   />
                 </div>
@@ -121,7 +121,11 @@ export const WorkView = () => {
                   <h2>myFlix App (React)</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
                   <div className="grid__img-sm">
-                    <img src={myFlix_React} alt="myFlix React homepage" />
+                    <img
+                      src={myFlix_React}
+                      alt="myFlix React"
+                      onClick={getImage}
+                    />
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
                   <div className="work_langs">
@@ -151,7 +155,11 @@ export const WorkView = () => {
                   </p>
                 </div>
                 <div className="grid__img">
-                  <img src={myFlix_React} alt="myFlix React homepage" />
+                  <img
+                    src={myFlix_React}
+                    alt="myFlix React"
+                    onClick={getImage}
+                  />
                 </div>
               </div>
 
@@ -162,7 +170,7 @@ export const WorkView = () => {
                   <h2>Meet App</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
                   <div className="grid__img-sm sm-img__margin">
-                    <img src={meet} alt="Meet app homepage" />
+                    <img src={meet} alt="Meet App" onClick={getImage} />
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
                   <div className="work_langs work_langs-reverse">
@@ -185,7 +193,7 @@ export const WorkView = () => {
                   </p>
                 </div>
                 <div className="grid__img grid__img-reverse">
-                  <img src={meet} alt="Meet app homepage" />
+                  <img src={meet} alt="Meet App" onClick={getImage} />
                 </div>
               </div>
 
@@ -198,18 +206,21 @@ export const WorkView = () => {
                     <div>
                       <img
                         src={chat_home}
-                        alt="chat app homepage"
+                        alt="Chat App"
                         className="chat-app_height"
+                        onClick={getImage}
                       />
                       <img
                         src={chatroom}
-                        alt="chat app chatroom page"
+                        alt="Chat App chatroom"
                         className="chat-app_height"
+                        onClick={getImage}
                       />
                       <img
                         src={choice}
-                        alt="chat app send option page"
+                        alt="Chat App dialog options"
                         className="chat-app_height"
+                        onClick={getImage}
                       />
                     </div>
                   </div>
@@ -236,18 +247,22 @@ export const WorkView = () => {
                   <div>
                     <img
                       src={chat_home}
-                      alt="chat app homepage"
+                      alt="Chat App"
                       className="chat-app_height"
+                      onClick={getImage}
                     />
                     <img
                       src={chatroom}
-                      alt="chat app chatroom page"
+                      alt="Chat App chatroom
+                      "
                       className="chat-app_height"
+                      onClick={getImage}
                     />
                     <img
                       src={choice}
-                      alt="chat app send option page"
+                      alt="Chat App dialog options"
                       className="chat-app_height"
+                      onClick={getImage}
                     />
                   </div>
                 </div>
@@ -262,7 +277,8 @@ export const WorkView = () => {
                   <div className="grid__img-sm sm-img__margin">
                     <img
                       src={myFlix_Angular}
-                      alt="myFlix-Angular-client app homepage"
+                      alt="myFlix Angular App"
+                      onClick={getImage}
                     />
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
@@ -296,7 +312,8 @@ export const WorkView = () => {
                 <div className="grid__img grid__img-reverse">
                   <img
                     src={myFlix_Angular}
-                    alt="myFlix-Angular-client app homepage"
+                    alt="myFlix Angular App"
+                    onClick={getImage}
                   />
                 </div>
               </div>
