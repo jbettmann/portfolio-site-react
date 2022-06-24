@@ -20,14 +20,14 @@ export const ContactView = ({ hideFooter }) => {
               Jordan Bettmann
               <br />
               {/* <!--Sends Email--> */}
-              <a href="mailto:jordan.bettmann@gmail.com">
-                jordan.bettmann@gmail.com
+              <a href="mailto:hello@jordanbettmann.com">
+                hello@jordanbettmann.com
               </a>
             </p>
             <div className="contact-icons">
               {/* <!--Email--> */}
               <a
-                href="mailto:jordan.bettmann@gmail.com"
+                href="mailto:hello@jordanbettmann.com"
                 className="social-icons"
               >
                 <Icon title="email" />

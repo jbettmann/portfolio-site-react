@@ -1,7 +1,6 @@
 import React from "react";
 import { Navbar } from "react-bootstrap";
 import { Icon } from "../../icons";
-import { ContactView } from "../contact/contact";
 
 import "./footer.scss";
 
