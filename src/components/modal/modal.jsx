@@ -17,7 +17,7 @@ export const ModalView = (props) => {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body id="body">
-        <img id="modal-image" src={props.image.src} />
+        <img id="modal-image" src={props.image.src} alt={props.image.alt} />
       </Modal.Body>
       <Modal.Footer>
         <button className="button" id="bs-btn__override" onClick={props.onHide}>
