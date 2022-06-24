@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import about from "../../img/about_pic.jpg";
 import { Icon } from "../../icons";
-import resume from "../../files/resume.pdf";
+import resume from "../../files/Bettmann_Jordan_Resume.pdf";
 
 import "./about.scss";
 
