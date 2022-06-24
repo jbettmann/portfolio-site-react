@@ -1,6 +1,5 @@
 import React from "react";
-import { Col, Container, Row, Image } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Col, Container, Row } from "react-bootstrap";
 import about from "../../img/about_pic.jpg";
 import { Icon } from "../../icons";
 import resume from "../../files/resume.pdf";

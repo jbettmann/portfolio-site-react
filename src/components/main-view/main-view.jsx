@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Col, Row, Container } from "react-bootstrap";
-import { Routes, Route, Redirect } from "react-router-dom"; // BrowserRouter used to implement state-based routing. HashRouter used for hash-based routing.
+import { Routes, Route } from "react-router-dom"; // BrowserRouter used to implement state-based routing. HashRouter used for hash-based routing.
 import { Homepage } from "../homepage/homepage";
 import { AboutView } from "../about/about";
 import { WorkView } from "../work/work";
