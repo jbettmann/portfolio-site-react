@@ -8,5 +8,14 @@
 }
 
 .social-media__icon {
-  margin: 2rem;
+  margin: 0 2rem;
+}
+
+/* ====================================================
+        Screen sizes below 415px
+  ====================================================== */
+@media all and (max-width: 415px) {
+  .social-media__icon {
+    margin: 0 1rem;
+  }
 }

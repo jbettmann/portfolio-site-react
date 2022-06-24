@@ -40,3 +40,72 @@ $logo-yellow: #d8bc73; /* mustard yellow */
 #dark {
   background-color: darken($logo-yellow, 20%);
 }
+
+/* ===================================
+       Screen sizes up to 500px
+  =================================== */
+@media all and (max-width: 500px) {
+  .homepage__content {
+    margin: 1rem 1rem;
+  }
+
+  .homepage__content {
+    h1 {
+      margin: 0;
+    }
+  }
+
+  .homepage-button__container {
+    flex-direction: column;
+  }
+
+  .homepage-button {
+    margin-top: 1rem;
+  }
+}
+
+/* ====================================================
+        Screen sizes between 500px and 750px
+  ====================================================== */
+@media all and (min-width: 500px) and (max-width: 770px) {
+  /* .grid {
+      grid-template-columns: 1fr 1fr;
+    } */
+
+  /* about page container */
+  .about {
+    flex-direction: column-reverse;
+    width: 90%;
+    margin: 20px auto; /* centers box in middle of page */
+    text-align: center;
+  }
+
+  /* portrait on about page */
+  .about__portrait {
+    max-width: 300px;
+    padding: 0 10px;
+  }
+
+  #about-resume__button {
+    display: none;
+  }
+
+  #about-resume__sm-button {
+    display: contents;
+  }
+
+  .skills-container {
+    margin-top: 2rem;
+  }
+}
+
+/* ===================================
+         Screen sizes up to 604px
+    =================================== */
+@media all and (max-width: 604px) {
+  .homepage {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

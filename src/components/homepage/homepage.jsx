@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./homepage.scss";
 
@@ -11,10 +11,10 @@ export const Homepage = () => {
           <div>
             <h1>hello world!</h1>
             <p>
-              My name is Jordan Bettmann.
+              My name is Jordan Bettmann
               <br />
               I'm a web developer from Denver, CO with a background <br />
-              in graphic design, brewing and brewing management.
+              in brewing, business management and graphic design.
             </p>
           </div>
           <div>
@@ -28,14 +28,14 @@ export const Homepage = () => {
               </div>
               {/* <!-- directs user to work page --> */}
               <div className="homepage-button">
-                <Link to="work" className="button" id="middle">
+                <Link to="projects" className="button" id="middle">
                   Check out my work
                 </Link>
               </div>
               {/* <!-- sends email --> */}
               <div className="homepage-button">
                 <a
-                  href="mailto:jordan.bettmann@gmail.com"
+                  href="mailto:hello@jordanbettmann.com"
                   className="button"
                   id="dark"
                 >

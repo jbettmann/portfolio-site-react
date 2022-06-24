@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Col, Row } from "react-bootstrap";
 import { Icon } from "../../icons";
 import "./work.scss";
 import meet from "../../img/meet.png";
@@ -25,7 +24,7 @@ export const WorkView = () => {
   };
 
   return (
-    <Container>
+    <>
       <Row>
         <Col lg={12}>
           <ModalView show={show} image={image} onHide={() => setShow(false)} />
@@ -45,7 +44,7 @@ export const WorkView = () => {
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
                   <div className="work_langs">
-                    <p> html css / javascript / bootstrap / jQuery </p>
+                    <p> html / css / javascript / bootstrap / jQuery </p>
                   </div>
                   <div className="grid__link">
                     <a
@@ -321,6 +320,6 @@ export const WorkView = () => {
           </div>
         </Col>
       </Row>
-    </Container>
+    </>
   );
 };

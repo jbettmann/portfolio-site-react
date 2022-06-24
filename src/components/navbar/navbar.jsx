@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import { Nav, Navbar } from "react-bootstrap";
 import { NavLink, Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../img/logo/logo.svg";
@@ -9,7 +8,7 @@ import "./navbar.scss";
 export const NavigationBar = ({ showFooter, hideFooter }) => {
   return (
     <Navbar>
-      <Container className="page-header">
+      <div className="page-header">
         {/* <!-- Add Logo here --> */}
         <Navbar.Brand
           as={Link}
@@ -20,7 +19,7 @@ export const NavigationBar = ({ showFooter, hideFooter }) => {
           <Logo />
         </Navbar.Brand>
         {/* <!-- Start of Navigation bar --> */}
-        <Container className="page-header__item ">
+        <div className="page-header__item ">
           <Nav className="navigation-list">
             <NavLink
               to="about"
@@ -31,12 +30,12 @@ export const NavigationBar = ({ showFooter, hideFooter }) => {
               About
             </NavLink>
             <NavLink
-              to="work"
+              to="projects"
               role="menuitem"
               className="navigation-list__item"
               onClick={showFooter} //sets footer to true in main-view state. shows Footer
             >
-              Work
+              Projects
             </NavLink>
             <NavLink
               to="contact"
@@ -46,8 +45,8 @@ export const NavigationBar = ({ showFooter, hideFooter }) => {
               Contact
             </NavLink>
           </Nav>
-        </Container>
-      </Container>
+        </div>
+      </div>
     </Navbar>
   );
 };

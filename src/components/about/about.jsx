@@ -3,6 +3,7 @@ import { Col, Container, Row, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import about from "../../img/about_pic.jpg";
 import { Icon } from "../../icons";
+import resume from "../../files/resume.pdf";
 
 import "./about.scss";
 
@@ -16,32 +17,39 @@ export const AboutView = () => {
               <h1>well hello!</h1>
               <p>
                 {/* <!-- elevator pick below --> */}
-                I'm Jordan, a developer from Denver, Colorado with a background
-                in graphic design, business owner and 7 years experience in
-                brewing and brewery management. High attention to details,
-                organization, problem solving and troubleshooting are just some
-                of the skill I've gained in my previous roles.
-                <br />
-                <br />
-                My transition to development has been instinctive. With my love
-                for problem solving and learning, I strive to construct the best
-                possible product. I'm seeking to join a collaborative team that
-                builds intuitive and dynamic web applications for an impactful
-                cause.
+                I'm Jordan, a developer enjoying life in beautiful Denver,
+                Colorado.
               </p>
-
+              <p>
+                As a brewer turned web developer, I enjoy building, an architect
+                if you will. With my experience and expertise in product
+                development, troubleshooting, problem solving and
+                entrepreneurialism, I thrive at orchestrating, creating and
+                constructing ideas.
+              </p>
+              <p>
+                My transition to development has been instinctive. Fueled by a
+                love for problem solving and learning, I strive to construct
+                user first products with an obsession to detail and efficiency
+                guiding my process.
+              </p>
+              <p>
+                I'm seeking to join a motivated team that builds intuitive and
+                dynamic web applications for an impactful cause.
+              </p>
               <p>
                 {/* <!-- Things about me outside of work --> */}
-                <span>Side notes:</span>
+                <span>Behind the code:</span>
                 <br />
-                Big fan of baking and cooking, outdoor activities and the
-                endless search for a great fantasy series (Stephen King's
-                <span>The Dark Town Series </span>is the current winner).
+                When not bypassing the mainframe, I’m probably baking and
+                cooking up a storm, searching for the best campsite in
+                existence, or devouring a great fantasy series (Stephen King's
+                <span>The Dark Town </span>is my current favorite).
               </p>
               {/* <!-- only displayed on small screens 770px and smaller --> */}
               <div id="about-resume__sm-button">
                 {/* <!-- link to download resume --> */}
-                <a href="files/resume.pdf" class="button" target="_blank">
+                <a href={resume} class="button" target="_blank">
                   Download My Resume
                 </a>
               </div>
@@ -96,7 +104,7 @@ export const AboutView = () => {
               </div>
               {/* <!-- link to download resume --> */}
               <div id="about-resume__button">
-                <a href="files/resume.pdf" class="button" target="_blank">
+                <a href={resume} class="button" target="_blank">
                   Download My Resume
                 </a>
               </div>

@@ -65,14 +65,21 @@ $header-font-weight: 700;
   margin: 0.3rem 0.8rem;
 }
 
-.skill__item p {
-  font-size: $icon-size;
-  margin: 0;
+.skill__item {
+  p {
+    font-size: $icon-size;
+    margin: 0;
+  }
 }
 
 /* <p> in about container */
-.about p {
-  text-align: left;
+.about {
+  p {
+    text-align: left;
+    br {
+      margin-top: 0.5rem;
+    }
+  }
 }
 .photo-button-container {
   display: flex;
@@ -86,4 +93,42 @@ $header-font-weight: 700;
 
 #about-resume__sm-button {
   display: none;
+}
+
+/* ====================================================
+        Screen sizes between 500px and 750px
+  ====================================================== */
+@media all and (max-width: 1000px) {
+  /* about page container */
+  .about {
+    flex-direction: column-reverse;
+    width: 90%;
+    margin: 20px auto; /* centers box in middle of page */
+    text-align: center;
+  }
+
+  /* portrait on about page */
+  .about__portrait {
+    max-width: 300px;
+    padding: 0 10px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  #about__text {
+    margin: 0;
+  }
+
+  #about-resume__button {
+    display: none;
+  }
+
+  #about-resume__sm-button {
+    display: block;
+    margin-top: 1.5rem;
+  }
+
+  .skills-container {
+    margin-top: 2rem;
+  }
 }
