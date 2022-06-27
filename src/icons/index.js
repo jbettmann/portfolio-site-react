@@ -13,6 +13,8 @@ import { LinkedIn } from "./linkedin";
 import { GitHubWorkLink } from "./github-work-link";
 import { LiveDemo } from "./live-demo";
 import { Twitter } from "./twitter";
+import { Download } from "./download";
+import { CaseStudy } from "./case-study";
 
 export const Icon = (props) => {
   switch (props.title) {
@@ -44,6 +46,10 @@ export const Icon = (props) => {
       return <LiveDemo {...props} />;
     case "twitter":
       return <Twitter {...props} />;
+    case "download":
+      return <Download {...props} />;
+    case "case study":
+      return <CaseStudy {...props} />;
     default:
       return <div />;
   }

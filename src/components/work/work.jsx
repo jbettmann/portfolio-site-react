@@ -11,6 +11,7 @@ import choice from "../../img/chat-app/chat-choice.jpeg";
 import chat_home from "../../img/chat-app/chat-home.PNG";
 import chatroom from "../../img/chat-app/chat-room.PNG";
 import { ModalView } from "../modal/modal";
+import caseStudy from "../../files/Case_Study.pdf";
 
 export const WorkView = () => {
   const [show, setShow] = useState(false);
@@ -142,6 +143,9 @@ export const WorkView = () => {
                       target="_blank"
                     >
                       <Icon title="live demo" />
+                    </a>
+                    <a href={caseStudy} target="_blank">
+                      <Icon title="case study" />
                     </a>
                   </div>
                   <p>
