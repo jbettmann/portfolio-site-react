@@ -11,7 +11,7 @@ export const AboutView = () => {
     <Container>
       <Row>
         <Col>
-          <div class="about">
+          <div className="about">
             <div id="about__text">
               <h1>well hello!</h1>
               <p>
@@ -48,44 +48,47 @@ export const AboutView = () => {
               </p>
               {/* <!-- only displayed on small screens 770px and smaller --> */}
               <div id="about-resume__sm-button">
-                {/* <!-- link to download resume --> */}
-                <a href={resume} class="button" target="_blank">
-                  <Icon title="download" /> Resume
-                </a>
+                <div className="button">
+                  {/* <!-- link to download resume --> */}
+                  <a href={resume} target="_blank">
+                    <Icon title="download" /> Resume
+                  </a>
+                </div>
               </div>
+
               {/* <!-- Start of Skills/Language container --> */}
-              <div class="skills-container">
+              <div className="skills-container">
                 <h2 id="skill__header">languages/skills</h2>
-                <div class="skills">
-                  <div class="skill__item">
+                <div className="skills">
+                  <div className="skill__item">
                     <p>html</p>
                     <Icon title="html" />
                   </div>
-                  <div class="skill__item">
+                  <div className="skill__item">
                     <p>css</p>
                     <Icon title="css" />
                   </div>
-                  <div class="skill__item">
+                  <div className="skill__item">
                     <p>javascript</p>
                     <Icon title="javascript" />
                   </div>
-                  <div class="skill__item">
+                  <div className="skill__item">
                     <p>node.js</p>
                     <Icon title="node_js" />
                   </div>
-                  <div class="skill__item">
+                  <div className="skill__item">
                     <p>react</p>
                     <Icon title="react" />
                   </div>
-                  <div class="skill__item">
+                  <div className="skill__item">
                     <p>angular</p>
                     <Icon title="angular" />
                   </div>
-                  <div class="skill__item">
+                  <div className="skill__item">
                     <p>bootstrap</p>
                     <Icon title="bootstrap" />
                   </div>
-                  <div class="skill__item">
+                  <div className="skill__item">
                     <p>material</p>
                     <Icon title="material design" />
                   </div>
@@ -93,18 +96,18 @@ export const AboutView = () => {
               </div>
             </div>
             {/* <!-- container holds profile photo and resume button --> */}
-            <div class="photo-button-container">
+            <div className="photo-button-container">
               {/* <!-- profile photo (about photo) --> */}
               <div>
                 <img
                   src={about}
                   alt="Jordan out backpacking"
-                  class="about__portrait"
+                  className="about__portrait"
                 />
               </div>
               {/* <!-- link to download resume --> */}
-              <div id="about-resume__button">
-                <a href={resume} class="button" target="_blank">
+              <div id="about-resume__button" className="button">
+                <a href={resume} target="_blank">
                   <Icon title="download" /> Resume
                 </a>
               </div>

@@ -18,6 +18,7 @@ $secondary-header-font-size: 20px;
 $nav-font-size: 18px;
 $body-font-weight: 400;
 $header-font-weight: 700;
+$shadow-color: hsl(43, 40%, 65% / 0.8);
 
 * {
   box-sizing: border-box; /* Makes all elements fit on screen */
@@ -79,25 +80,35 @@ span {
 button,
 .button,
 .form-group input[type="submit"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 85px;
+  height: 85px;
   /* overwrites browser defaults and resets the broder */
   border: none;
-
   /* takes the font from the outer container */
   font-family: $body-font, sans-serif;
 
   /* styles the background color, font color and text decoration (unerline, etc. of the button */
   background-color: $logo-yellow; /* light pink */
   color: $black; /* black */
-  text-decoration: none;
-
+  filter: drop-shadow(3px 6px 6px $shadow-color);
   /* adds spacing to the button (this will be duscussed later */
   padding: 10px 15px;
-  margin: 10px 0;
-  border-radius: 5px;
-
+  margin: 10px 5px;
+  border-radius: 50%;
+  will-change: transform; // tells browser we will transform for slicker CPU
+  transition: transform 320ms ease-in, filter 200ms ease-in;
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  transition: 0.2s opacity;
+  // border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+
+  a {
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.3;
+  }
 }
 
 .form-group input[type="submit"] {
@@ -113,6 +124,8 @@ button:focus,
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
   /* reduces the opacity of the button to 70% */
-  opacity: 0.7;
   text-decoration: none;
+  transition: transform 200ms;
+  transform: translateY(-5px);
+  filter: drop-shadow(0 12px 12px $shadow-color);
 }

@@ -123,13 +123,10 @@ $header-font-weight: 700;
   }
 
   #about-resume__sm-button {
-    display: block;
-    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
   }
 
-  .skills-container {
-    margin-top: 2rem;
-  }
   .skill__item {
     p {
       display: block;
