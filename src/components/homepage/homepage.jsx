@@ -19,22 +19,16 @@ export const Homepage = () => {
           </div>
           <div>
             <h2>lets get started...</h2>
-            <div className="homepage-button__container"></div>
-            <div className="homepage-button__container"></div>
             <div className="homepage-button__container">
               {/* <!-- directs use to about page --> */}
               <div className="button">
                 <Link to="about">About Me</Link>
               </div>
               {/* <!-- directs user to work page --> */}
-              <div className="homepage-button__container"></div>
-              <div className="homepage-button__container"></div>
               <div className="button" id="middle">
                 <Link to="projects">Projects</Link>
               </div>
               {/* <!-- sends email --> */}
-              <div className="homepage-button__container"></div>
-              <div className="homepage-button__container"></div>
               <div className="button" id="dark">
                 <a href="mailto:hello@jordanbettmann.com">Get In Touch</a>
               </div>

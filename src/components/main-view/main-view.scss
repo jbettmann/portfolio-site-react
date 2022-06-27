@@ -18,7 +18,7 @@ $secondary-header-font-size: 20px;
 $nav-font-size: 18px;
 $body-font-weight: 400;
 $header-font-weight: 700;
-$shadow-color: hsl(43, 40%, 65% / 0.8);
+$shadow-color: hsl(43, 40%, 65% / 0.9);
 
 * {
   box-sizing: border-box; /* Makes all elements fit on screen */
@@ -94,13 +94,13 @@ button,
   /* styles the background color, font color and text decoration (unerline, etc. of the button */
   background-color: $logo-yellow; /* light pink */
   color: $black; /* black */
-  filter: drop-shadow(3px 6px 6px $shadow-color);
+  filter: drop-shadow(0px 6px 6px $shadow-color);
   /* adds spacing to the button (this will be duscussed later */
   padding: 10px 15px;
   margin: 10px 5px;
   border-radius: 50%;
   will-change: transform; // tells browser we will transform for slicker CPU
-  transition: transform 320ms ease-in, filter 150ms ease-out;
+  transition: transform 300ms ease-out 0s, filter 300ms ease-out 0s;
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   // border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 
@@ -125,7 +125,7 @@ button:focus,
   cursor: pointer;
   /* reduces the opacity of the button to 70% */
   text-decoration: none;
-  transition: transform 150ms ease-in;
+  transition: transform 150ms ease-in-out 0s, filter 150ms ease-in-out 0s;
   transform: translateY(-5px);
-  filter: drop-shadow(0 12px 12px $shadow-color);
+  filter: drop-shadow(0 10px 10px $shadow-color);
 }
