@@ -100,7 +100,7 @@ button,
   margin: 10px 5px;
   border-radius: 50%;
   will-change: transform; // tells browser we will transform for slicker CPU
-  transition: transform 320ms ease-in, filter 200ms ease-in;
+  transition: transform 320ms ease-in, filter 150ms ease-out;
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   // border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 
@@ -125,7 +125,7 @@ button:focus,
   cursor: pointer;
   /* reduces the opacity of the button to 70% */
   text-decoration: none;
-  transition: transform 200ms;
+  transition: transform 150ms ease-in;
   transform: translateY(-5px);
   filter: drop-shadow(0 12px 12px $shadow-color);
 }
