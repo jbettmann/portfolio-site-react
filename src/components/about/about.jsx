@@ -33,23 +33,24 @@ export const AboutView = () => {
                 guiding my process.
               </p>
               <p>
-                I'm seeking to join a motivated team that builds intuitive and
-                dynamic web applications for an impactful cause.
+                I'm seeking to join a motivated team full-time that builds
+                intuitive and dynamic web applications for an impactful cause.
               </p>
               <p>
                 {/* <!-- Things about me outside of work --> */}
                 <span>Behind the code:</span>
                 <br />
                 When not bypassing the mainframe, I’m probably baking and
-                cooking up a storm, searching for the best campsite in
-                existence, or devouring a great fantasy series (Stephen King's
+                cooking up a storm, flying around Denver's bike trails on my
+                single-speed, searching for the best campsite in existence, or
+                devouring a great fantasy series (Stephen King's
                 <span>The Dark Town </span>is my current favorite).
               </p>
               {/* <!-- only displayed on small screens 770px and smaller --> */}
               <div id="about-resume__sm-button">
                 {/* <!-- link to download resume --> */}
                 <a href={resume} class="button" target="_blank">
-                  Download My Resume
+                  <Icon title="download" /> Resume
                 </a>
               </div>
               {/* <!-- Start of Skills/Language container --> */}
@@ -57,35 +58,35 @@ export const AboutView = () => {
                 <h2 id="skill__header">languages/skills</h2>
                 <div class="skills">
                   <div class="skill__item">
-                    {/* <p>html</p> */}
+                    <p>html</p>
                     <Icon title="html" />
                   </div>
                   <div class="skill__item">
-                    {/* <p>css</p> */}
+                    <p>css</p>
                     <Icon title="css" />
                   </div>
                   <div class="skill__item">
-                    {/* <p>javascript</p> */}
+                    <p>javascript</p>
                     <Icon title="javascript" />
                   </div>
                   <div class="skill__item">
-                    {/* <p>node.js</p> */}
+                    <p>node.js</p>
                     <Icon title="node_js" />
                   </div>
                   <div class="skill__item">
-                    {/* <p>react</p> */}
+                    <p>react</p>
                     <Icon title="react" />
                   </div>
                   <div class="skill__item">
-                    {/* <p>angular</p> */}
+                    <p>angular</p>
                     <Icon title="angular" />
                   </div>
                   <div class="skill__item">
-                    {/* <p>bootstrap</p> */}
+                    <p>bootstrap</p>
                     <Icon title="bootstrap" />
                   </div>
                   <div class="skill__item">
-                    {/* <p>material</p> */}
+                    <p>material</p>
                     <Icon title="material design" />
                   </div>
                 </div>
@@ -104,7 +105,7 @@ export const AboutView = () => {
               {/* <!-- link to download resume --> */}
               <div id="about-resume__button">
                 <a href={resume} class="button" target="_blank">
-                  Download My Resume
+                  <Icon title="download" /> Resume
                 </a>
               </div>
             </div>

@@ -25,7 +25,6 @@ $logo-yellow: #d8bc73; /* mustard yellow */
 
 .homepage-button__container {
   display: inline-flex;
-  flex-direction: row-reverse;
   flex-wrap: wrap;
 }
 
@@ -34,11 +33,11 @@ $logo-yellow: #d8bc73; /* mustard yellow */
 }
 
 #middle {
-  background-color: darken($logo-yellow, 10%);
+  background-color: darken($logo-yellow, 5%);
 }
 
 #dark {
-  background-color: darken($logo-yellow, 20%);
+  background-color: darken($logo-yellow, 10%);
 }
 
 /* ===================================

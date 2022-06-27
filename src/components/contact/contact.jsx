@@ -15,7 +15,7 @@ export const ContactView = ({ hideFooter }) => {
       <Row>
         <Col>
           <div className="contact-info">
-            <h1>Contact</h1>
+            <h1>contact</h1>
             <p>
               Jordan Bettmann
               <br />

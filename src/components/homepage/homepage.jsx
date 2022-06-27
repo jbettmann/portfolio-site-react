@@ -29,7 +29,7 @@ export const Homepage = () => {
               {/* <!-- directs user to work page --> */}
               <div className="homepage-button">
                 <Link to="projects" className="button" id="middle">
-                  Check out my work
+                  Projects
                 </Link>
               </div>
               {/* <!-- sends email --> */}

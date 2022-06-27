@@ -67,8 +67,7 @@ $header-font-weight: 700;
 
 .skill__item {
   p {
-    font-size: $icon-size;
-    margin: 0;
+    display: none;
   }
 }
 
@@ -130,5 +129,12 @@ $header-font-weight: 700;
 
   .skills-container {
     margin-top: 2rem;
+  }
+  .skill__item {
+    p {
+      display: block;
+      font-size: $icon-size;
+      margin: 0;
+    }
   }
 }
