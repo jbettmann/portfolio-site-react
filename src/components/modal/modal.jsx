@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal } from "react-bootstrap";
+import { Modal, Button } from "react-bootstrap";
 
 import "./modal.scss";
 
@@ -20,9 +20,13 @@ export const ModalView = (props) => {
         <img id="modal-image" src={props.image.src} alt={props.image.alt} />
       </Modal.Body>
       <Modal.Footer>
-        <button className="button" id="bs-btn__override" onClick={props.onHide}>
+        <Button
+          variant="outline-dark"
+          id="bs-btn__override"
+          onClick={props.onHide}
+        >
           Close
-        </button>
+        </Button>
       </Modal.Footer>
     </Modal>
   );

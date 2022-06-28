@@ -2,5 +2,10 @@
   width: 100%;
 }
 #bs-btn__override {
+  height: auto;
   padding: 8px 20px;
+}
+
+.modal-footer {
+  justify-content: center;
 }
