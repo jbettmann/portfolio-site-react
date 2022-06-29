@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import about from "../../img/about_pic.jpg";
+import about from "../../img/about_photo_1.jpg";
 import { Icon } from "../../icons";
 import resume from "../../files/Bettmann_Jordan_Resume.pdf";
 
