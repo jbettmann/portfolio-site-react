@@ -28,7 +28,7 @@ export const ContactView = ({ hideFooter }) => {
               {/* <!--Email--> */}
               <a
                 href="mailto:hello@jordanbettmann.com"
-                className="social-icons"
+                className="social-icons button sm-button"
               >
                 <Icon title="email" />
               </a>
@@ -36,7 +36,7 @@ export const ContactView = ({ hideFooter }) => {
               <a
                 href="https://twitter.com/gordev5"
                 target="_blank"
-                className="social-icons"
+                className="social-icons button sm-button"
               >
                 <Icon title="twitter" />
               </a>
@@ -44,7 +44,7 @@ export const ContactView = ({ hideFooter }) => {
               <a
                 href="https://github.com/jbettmann"
                 target="_blank"
-                className="social-icons"
+                className="social-icons button sm-button"
               >
                 <Icon title="github" />
               </a>
@@ -52,7 +52,7 @@ export const ContactView = ({ hideFooter }) => {
               <a
                 href="https://www.linkedin.com/in/jordan-bettmann-268a39228/"
                 target="_blank"
-                className="social-icons"
+                className="social-icons button sm-button"
               >
                 <Icon title="linkedin" />
               </a>

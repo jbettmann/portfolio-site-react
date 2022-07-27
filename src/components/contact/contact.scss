@@ -20,6 +20,8 @@ $black: #000;
 }
 
 .contact-icons {
+  display: flex;
+  justify-content: center;
   margin-top: 30px;
 }
 
@@ -32,12 +34,9 @@ $black: #000;
   ====================================================== */
 @media all and (max-width: 415px) {
   .contact-icons {
-    display: flex;
-    justify-content: center;
     align-items: center;
   }
   .social-icons {
     margin: auto;
-    flex: 1 1 50px;
   }
 }
