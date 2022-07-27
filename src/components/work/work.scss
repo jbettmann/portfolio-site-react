@@ -116,6 +116,7 @@ p {
 
 .grid__img-sm {
   display: none;
+  transition: transform 0.3s;
 }
 
 .grid__img-sm {
@@ -129,6 +130,7 @@ p {
   align-items: center;
   justify-content: flex-end;
   flex: 1 0 500px;
+  transition: transform 0.3s;
 }
 
 .grid__img-reverse {
@@ -140,6 +142,14 @@ p {
     cursor: pointer;
     width: 90%;
   }
+}
+
+.grid__img:hover {
+  transform: scale(1.1);
+}
+
+.grid__img-sm:hover {
+  transform: scale(1.05);
 }
 
 .grid__img > div {
