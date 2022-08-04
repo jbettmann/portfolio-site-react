@@ -95,7 +95,7 @@ button,
   /* styles the background color, font color and text decoration (underline, etc. of the button */
   background-color: $primary-color;
   color: $button-font;
-  filter: drop-shadow(0px 6px 8px $shadow-color);
+  filter: drop-shadow(0px 5px 8px $shadow-color);
   /* adds spacing to the button (this will be discussed later */
   padding: 10px 15px;
   margin: 10px 5px;
