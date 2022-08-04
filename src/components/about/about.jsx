@@ -48,10 +48,14 @@ export const AboutView = () => {
               </p>
               {/* <!-- only displayed on small screens 770px and smaller --> */}
               <div id="about-resume__sm-button">
-                <div className="button">
+                <div>
                   {/* <!-- link to download resume --> */}
-                  <a href={resume} target="_blank">
-                    <Icon title="download" /> Resume
+                  <a
+                    href={resume}
+                    target="_blank"
+                    className="navigation-list__item"
+                  >
+                    <Icon title="download" /> resume
                   </a>
                 </div>
               </div>
@@ -106,9 +110,13 @@ export const AboutView = () => {
                 />
               </div>
               {/* <!-- link to download resume --> */}
-              <div id="about-resume__button" className="button">
-                <a href={resume} target="_blank">
-                  <Icon title="download" /> Resume
+              <div id="about-resume__button">
+                <a
+                  href={resume}
+                  target="_blank"
+                  className="navigation-list__item"
+                >
+                  <Icon title="download" /> resume
                 </a>
               </div>
             </div>

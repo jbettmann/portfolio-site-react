@@ -1,3 +1,4 @@
+$primary-color: #234442; /* dark paint green */
 $logo-yellow: #d8bc73; /* mustard yellow */
 
 /* home page profile container layout */
@@ -34,11 +35,11 @@ $logo-yellow: #d8bc73; /* mustard yellow */
 }
 
 #middle {
-  background-color: darken($logo-yellow, 5%);
+  background-color: lighten($primary-color, 5%);
 }
 
-#dark {
-  background-color: darken($logo-yellow, 10%);
+#light {
+  background-color: lighten($primary-color, 10%);
 }
 
 /* ===================================

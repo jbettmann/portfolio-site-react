@@ -15,6 +15,7 @@ import { LiveDemo } from "./live-demo";
 import { Twitter } from "./twitter";
 import { Download } from "./download";
 import { CaseStudy } from "./case-study";
+import { GitHubSocial } from "./github-social";
 
 export const Icon = (props) => {
   switch (props.title) {
@@ -38,6 +39,8 @@ export const Icon = (props) => {
       return <Email {...props} />;
     case "github":
       return <GitHub {...props} />;
+    case "github-social":
+      return <GitHubSocial {...props} />;
     case "github repo":
       return <GitHubWorkLink {...props} />;
     case "linkedin":

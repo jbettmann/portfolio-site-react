@@ -46,7 +46,7 @@ export const ContactView = ({ hideFooter }) => {
                 target="_blank"
                 className="social-icons button sm-button"
               >
-                <Icon title="github" />
+                <Icon title="github-social" />
               </a>
               {/* <!--LinkedIn--> */}
               <a

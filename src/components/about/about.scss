@@ -87,10 +87,12 @@ $header-font-weight: 700;
 }
 
 #about-resume__button {
+  font-family: $header-font, sans-serif;
   margin-top: 1rem;
 }
 
 #about-resume__sm-button {
+  font-family: $header-font, sans-serif;
   display: none;
 }
 
