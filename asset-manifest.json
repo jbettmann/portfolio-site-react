@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.cc8efc67.css",
+    "main.css": "/static/css/main.87da02d2.css",
     "main.js": "/static/js/main.b0d9770b.js",
     "static/js/787.42a8f168.chunk.js": "/static/js/787.42a8f168.chunk.js",
     "static/media/myFlix_React.png": "/static/media/myFlix_React.bd82cd0d337ab157ab20.png",
@@ -32,12 +32,12 @@
     "static/media/css.svg": "/static/media/css.c548a22bcf7a92dd0c9c7fcd4526cdd9.svg",
     "static/media/download.svg": "/static/media/download.b0c24093148ec4d856ef05279413e249.svg",
     "static/media/angular.svg": "/static/media/angular.5c612c7b90fbf40fd344067b5e9e59da.svg",
-    "main.cc8efc67.css.map": "/static/css/main.cc8efc67.css.map",
+    "main.87da02d2.css.map": "/static/css/main.87da02d2.css.map",
     "main.b0d9770b.js.map": "/static/js/main.b0d9770b.js.map",
     "787.42a8f168.chunk.js.map": "/static/js/787.42a8f168.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc8efc67.css",
+    "static/css/main.87da02d2.css",
     "static/js/main.b0d9770b.js"
   ]
 }
