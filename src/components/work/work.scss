@@ -72,6 +72,7 @@ p {
 }
 
 .work_langs {
+  border-radius: 15px;
   padding-left: 0.5rem;
   width: 70%;
   background-color: $primary-color;
@@ -79,17 +80,18 @@ p {
 }
 
 .work_langs p {
-  padding: 0.2rem;
+  padding: 0.8rem;
 }
 
 .work_langs-reverse {
+  border-radius: 15px;
   padding-right: 0;
   padding-right: 0.5rem;
 }
 
 .work_langs-reverse p {
   margin: 0 auto;
-  padding: 0.2rem;
+  padding: 0.8rem;
 }
 
 .grid__link {
@@ -122,25 +124,87 @@ p {
 .grid__img-sm {
   img {
     cursor: pointer;
+    border-radius: 10px;
   }
 }
 
+.grid__img-reverse {
+  justify-content: center;
+  border-radius: 20px;
+}
 .grid__img {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   flex: 1 0 500px;
   transition: transform 0.3s;
+  border-radius: 20px;
 }
 
-.grid__img-reverse {
-  justify-content: flex-start;
+.angular {
+  background-color: #300551;
+  filter: drop-shadow(1px 1px 3px darken(#300551, 10%));
+}
+.angular-img {
+  background-color: #dbcae9;
+  filter: drop-shadow(1px 1px 3px darken(#dbcae9, 50%));
+}
+
+.pokemon {
+  background-color: #576b5a;
+  filter: drop-shadow(1px 1px 3px darken(#576b5a, 10%));
+}
+
+.pokemon-img {
+  background-color: #c8e9bb;
+  filter: drop-shadow(1px 1px 3px darken(#c8e9bb, 50%));
+}
+
+.api {
+  background-color: #185fa7;
+  filter: drop-shadow(1px 1px 3px darken(#185fa7, 10%));
+}
+
+.api-img {
+  background-color: #83b7ed;
+  filter: drop-shadow(1px 1px 3px darken(#83b7ed, 50%));
+}
+
+.react {
+  background-color: #373737;
+  filter: drop-shadow(1px 1px 3px darken(#373737, 10%));
+}
+
+.react-img {
+  background-color: #aeaeae;
+  filter: drop-shadow(1px 1px 3px darken(#aeaeae, 50%));
+}
+
+.meet {
+  background-color: #d85e5e;
+  filter: drop-shadow(1px 1px 3px darken(#d85e5e, 20%));
+}
+
+.meet-img {
+  background-color: #f4a0a0;
+  filter: drop-shadow(1px 1px 3px darken(#f4a0a0, 50%));
+}
+
+.chat {
+  background-color: #5f675a;
+  filter: drop-shadow(1px 1px 3px darken(#5f675a, 10%));
+}
+
+.chat-img {
+  background-color: #e9f3e0;
+  filter: drop-shadow(1px 1px 3px darken(#e9f3e0, 50%));
 }
 
 .grid__img {
   img {
     cursor: pointer;
-    width: 90%;
+    width: 70%;
+    border-radius: 10px;
   }
 }
 
@@ -153,7 +217,9 @@ p {
 }
 
 .grid__img > div {
-  width: 90%;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
 }
 .chat-app_height {
   width: 32% !important;
@@ -213,12 +279,14 @@ p {
     flex-direction: column;
   }
   .grid__img-sm {
-    display: block;
-    flex: 0;
-  }
-
-  .sm-img__margin {
-    margin: 0.8rem;
+    display: flex;
+    /* margin: auto 0; */
+    /* background-color: #d8bc73; */
+    flex: 0 1;
+    margin: 0.8rem 0.8rem 1.5rem 0.8rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
   }
 
   .grid__img {
@@ -226,10 +294,14 @@ p {
   }
 
   .grid__img-sm > img {
-    width: 100%;
+    width: 80%;
+    padding: 2rem 0;
   }
 
   .grid__img-sm > div {
-    width: 100%;
+    width: 70%;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
   }
 }

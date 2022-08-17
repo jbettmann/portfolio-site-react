@@ -40,7 +40,7 @@ export const WorkView = () => {
                 <div className="grid__content-reverse">
                   <h2>myFlix App (Angular)</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
-                  <div className="grid__img-sm sm-img__margin">
+                  <div className="grid__img-sm angular-img">
                     <img
                       src={myFlix_Angular}
                       alt="myFlix Angular App"
@@ -48,7 +48,7 @@ export const WorkView = () => {
                     />
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
-                  <div className="work_langs work_langs-reverse">
+                  <div className="work_langs work_langs-reverse angular">
                     <p>
                       angular / typescript / typedoc / jsdoc / angular material
                     </p>
@@ -75,7 +75,7 @@ export const WorkView = () => {
                     TypeDoc.
                   </p>
                 </div>
-                <div className="grid__img grid__img-reverse">
+                <div className="grid__img grid__img-reverse angular-img">
                   <img
                     src={myFlix_Angular}
                     alt="myFlix Angular App"
@@ -89,11 +89,11 @@ export const WorkView = () => {
                 <div className="grid__content">
                   <h2>PokeDex</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
-                  <div className="grid__img-sm">
+                  <div className="grid__img-sm pokemon-img">
                     <img src={pokedex} alt="PokeDex" onClick={getImage} />
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
-                  <div className="work_langs">
+                  <div className="work_langs pokemon">
                     <p> html / css / javascript / bootstrap / jQuery </p>
                   </div>
                   <div className="grid__link">
@@ -117,7 +117,7 @@ export const WorkView = () => {
                     details via a modal built with Bootstrap.
                   </p>
                 </div>
-                <div className="grid__img">
+                <div className="grid__img pokemon-img">
                   <img src={pokedex} alt="PokeDex" onClick={getImage} />
                 </div>
               </div>
@@ -128,7 +128,7 @@ export const WorkView = () => {
                 <div className="grid__content-reverse">
                   <h2>myFlix API</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
-                  <div className="grid__img-sm sm-img__margin">
+                  <div className="grid__img-sm api-img">
                     <img
                       src={myFlix_database}
                       alt="myFlix-API tested in Postman"
@@ -136,7 +136,7 @@ export const WorkView = () => {
                     />
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
-                  <div className="work_langs work_langs-reverse">
+                  <div className="work_langs work_langs-reverse api">
                     <p> node.js / express / mongoDB / mongoose </p>
                   </div>
                   <div className="grid__link-reverse">
@@ -155,7 +155,7 @@ export const WorkView = () => {
                     and JWT (token-based) authentication and data security.
                   </p>
                 </div>
-                <div className="grid__img grid__img-reverse">
+                <div className="grid__img grid__img-reverse api-img">
                   <img
                     src={myFlix_database}
                     alt="myFlix-API tested in Postman"
@@ -169,7 +169,7 @@ export const WorkView = () => {
                 <div className="grid__content">
                   <h2>myFlix App (React)</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
-                  <div className="grid__img-sm">
+                  <div className="grid__img-sm react-img">
                     <img
                       src={myFlix_React}
                       alt="myFlix React"
@@ -177,7 +177,7 @@ export const WorkView = () => {
                     />
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
-                  <div className="work_langs">
+                  <div className="work_langs react">
                     <p> react / mongoDB / redux / netlify / bootstrap </p>
                   </div>
                   <div className="grid__link">
@@ -206,7 +206,7 @@ export const WorkView = () => {
                     RESTful API.
                   </p>
                 </div>
-                <div className="grid__img">
+                <div className="grid__img react-img">
                   <img
                     src={myFlix_React}
                     alt="myFlix React"
@@ -221,11 +221,11 @@ export const WorkView = () => {
                 <div className="grid__content-reverse">
                   <h2>Meet App</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
-                  <div className="grid__img-sm sm-img__margin">
+                  <div className="grid__img-sm meet-img">
                     <img src={meet} alt="Meet App" onClick={getImage} />
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
-                  <div className="work_langs work_langs-reverse">
+                  <div className="work_langs work_langs-reverse meet">
                     <p> react / MUI / TDD / jest / puppeteer / aws </p>
                   </div>
                   <div className="grid__link-reverse">
@@ -244,7 +244,7 @@ export const WorkView = () => {
                     Rechart to display data visualizations.
                   </p>
                 </div>
-                <div className="grid__img grid__img-reverse">
+                <div className="grid__img grid__img-reverse meet-img">
                   <img src={meet} alt="Meet App" onClick={getImage} />
                 </div>
               </div>
@@ -254,7 +254,7 @@ export const WorkView = () => {
                 <div className="grid__content">
                   <h2>Chat App</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
-                  <div className="grid__img-sm">
+                  <div className="grid__img-sm chat-img">
                     <div>
                       <img
                         src={chat_home}
@@ -277,7 +277,7 @@ export const WorkView = () => {
                     </div>
                   </div>
                   {/* <!-- end of 1000px and smaller view --> */}
-                  <div className="work_langs">
+                  <div className="work_langs chat">
                     <p> react native / expo / google firebase / gifted chat </p>
                   </div>
                   <div className="grid__link">
@@ -295,7 +295,7 @@ export const WorkView = () => {
                     location.
                   </p>
                 </div>
-                <div className="grid__img">
+                <div className="grid__img chat-img">
                   <div>
                     <img
                       src={chat_home}
