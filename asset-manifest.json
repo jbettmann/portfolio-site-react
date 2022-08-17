@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.87da02d2.css",
-    "main.js": "/static/js/main.b0d9770b.js",
+    "main.js": "/static/js/main.114d4e37.js",
     "static/js/787.42a8f168.chunk.js": "/static/js/787.42a8f168.chunk.js",
     "static/media/myFlix_React.png": "/static/media/myFlix_React.bd82cd0d337ab157ab20.png",
     "static/media/chat-home.PNG": "/static/media/chat-home.6b6cd6f2a7171bc05a5c.PNG",
@@ -13,7 +13,7 @@
     "static/media/myFlix_database.png": "/static/media/myFlix_database.560f574ee264fc0d093d.png",
     "static/media/chat-choice.jpeg": "/static/media/chat-choice.d7ea6d9fe8df7676019c.jpeg",
     "static/media/meet.png": "/static/media/meet.1cf41ed4d283f7de887b.png",
-    "static/media/Bettmann_Jordan_Resume.pdf": "/static/media/Bettmann_Jordan_Resume.6788be7258237807edbf.pdf",
+    "static/media/Bettmann_Jordan_Resume.pdf": "/static/media/Bettmann_Jordan_Resume.9fa5b5d5d0a3b081c948.pdf",
     "static/media/logo.svg": "/static/media/logo.792117ac6c6609804360b1fe84894cdd.svg",
     "static/media/react.svg": "/static/media/react.758a92c70ebf88b3f3960a0cf7459020.svg",
     "static/media/email_icon.svg": "/static/media/email_icon.41a72c38b081fe98dafd39286f2f0c3f.svg",
@@ -33,11 +33,11 @@
     "static/media/download.svg": "/static/media/download.b0c24093148ec4d856ef05279413e249.svg",
     "static/media/angular.svg": "/static/media/angular.5c612c7b90fbf40fd344067b5e9e59da.svg",
     "main.87da02d2.css.map": "/static/css/main.87da02d2.css.map",
-    "main.b0d9770b.js.map": "/static/js/main.b0d9770b.js.map",
+    "main.114d4e37.js.map": "/static/js/main.114d4e37.js.map",
     "787.42a8f168.chunk.js.map": "/static/js/787.42a8f168.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.87da02d2.css",
-    "static/js/main.b0d9770b.js"
+    "static/js/main.114d4e37.js"
   ]
 }
