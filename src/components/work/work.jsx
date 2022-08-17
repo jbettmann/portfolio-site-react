@@ -34,6 +34,55 @@ export const WorkView = () => {
               <h1>my projects</h1>
             </div>
             <div className="grid">
+              {/* <!-- Project 6 REVERSE --> */}
+              {/* <!-- REVERSE layout for this. Referenced in style as "reverse" --> */}
+              <div className="grid__item reverse">
+                <div className="grid__content-reverse">
+                  <h2>myFlix App (Angular)</h2>
+                  {/* <!-- displays only in 1000px and smaller screens --> */}
+                  <div className="grid__img-sm sm-img__margin">
+                    <img
+                      src={myFlix_Angular}
+                      alt="myFlix Angular App"
+                      onClick={getImage}
+                    />
+                  </div>
+                  {/* <!-- end of 1000px and smaller screens --> */}
+                  <div className="work_langs work_langs-reverse">
+                    <p>
+                      angular / typescript / typedoc / jsdoc / angular material
+                    </p>
+                  </div>
+                  <div className="grid__link-reverse">
+                    <a
+                      href="https://github.com/jbettmann/myFlix-Angular-client"
+                      target="_blank"
+                    >
+                      <Icon title="github repo" />
+                    </a>
+                    <a
+                      href="https://jbettmann.github.io/myFlix-Angular-client/welcome"
+                      target="_blank"
+                    >
+                      <Icon title="live demo" />
+                    </a>
+                  </div>
+                  <p className="p_reverse">
+                    Using the myFlix REST API build in a previous project, this
+                    client side version of the myFlix App was build with
+                    Angular. The entire UI of the app was designed with Angular
+                    Material. Documentation for the project was generated with
+                    TypeDoc.
+                  </p>
+                </div>
+                <div className="grid__img grid__img-reverse">
+                  <img
+                    src={myFlix_Angular}
+                    alt="myFlix Angular App"
+                    onClick={getImage}
+                  />
+                </div>
+              </div>
               {/* <!-- Project 1 NORMAL--> */}
               {/* <!-- Grid items will live here --> */}
               <div className="grid__item">
@@ -268,56 +317,6 @@ export const WorkView = () => {
                       onClick={getImage}
                     />
                   </div>
-                </div>
-              </div>
-
-              {/* <!-- Project 6 REVERSE --> */}
-              {/* <!-- REVERSE layout for this. Referenced in style as "reverse" --> */}
-              <div className="grid__item reverse">
-                <div className="grid__content-reverse">
-                  <h2>myFlix App (Angular)</h2>
-                  {/* <!-- displays only in 1000px and smaller screens --> */}
-                  <div className="grid__img-sm sm-img__margin">
-                    <img
-                      src={myFlix_Angular}
-                      alt="myFlix Angular App"
-                      onClick={getImage}
-                    />
-                  </div>
-                  {/* <!-- end of 1000px and smaller screens --> */}
-                  <div className="work_langs work_langs-reverse">
-                    <p>
-                      angular / typescript / typedoc / jsdoc / angular material
-                    </p>
-                  </div>
-                  <div className="grid__link-reverse">
-                    <a
-                      href="https://github.com/jbettmann/myFlix-Angular-client"
-                      target="_blank"
-                    >
-                      <Icon title="github repo" />
-                    </a>
-                    <a
-                      href="https://jbettmann.github.io/myFlix-Angular-client/welcome"
-                      target="_blank"
-                    >
-                      <Icon title="live demo" />
-                    </a>
-                  </div>
-                  <p className="p_reverse">
-                    Using the myFlix REST API build in a previous project, this
-                    client side version of the myFlix App was build with
-                    Angular. The entire UI of the app was designed with Angular
-                    Material. Documentation for the project was generated with
-                    TypeDoc.
-                  </p>
-                </div>
-                <div className="grid__img grid__img-reverse">
-                  <img
-                    src={myFlix_Angular}
-                    alt="myFlix Angular App"
-                    onClick={getImage}
-                  />
                 </div>
               </div>
             </div>
