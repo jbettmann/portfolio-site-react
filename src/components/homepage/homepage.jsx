@@ -21,7 +21,7 @@ export const Homepage = () => {
             <h2>lets get started...</h2>
             <div className="homepage-button__container">
               {/* <!-- directs use to about page --> */}
-              <div className="button" id="light">
+              <div className="button" id="first">
                 <Link to="about">About Me</Link>
               </div>
               {/* <!-- directs user to work page --> */}
@@ -29,7 +29,7 @@ export const Homepage = () => {
                 <Link to="projects">Projects</Link>
               </div>
               {/* <!-- sends email --> */}
-              <div className="button">
+              <div className="button" id="last">
                 <a href="mailto:hello@jordanbettmann.com">Get In Touch</a>
               </div>
             </div>

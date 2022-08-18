@@ -26,8 +26,24 @@ $black: #000;
 }
 
 .social-icons {
-  fill: $main-background-color;
+  fill: $black;
   margin: 0 2rem;
+}
+
+#email {
+  background-color: #dbcae9;
+}
+
+#twitter {
+  background-color: #83b7ed;
+}
+
+#github {
+  background-color: #c8e9bc;
+}
+
+#linked-in {
+  background-color: #f4a0a0;
 }
 
 /* ====================================================
