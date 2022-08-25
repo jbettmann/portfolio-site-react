@@ -44,7 +44,7 @@ export const AboutView = () => {
                 cooking up a storm, flying around Denver's bike trails on my
                 single-speed, searching for the best campsite in existence, or
                 devouring a great fantasy series (Stephen King's
-                <span>The Dark Town </span>is my current favorite).
+                <span>The Dark Tower </span>is my current favorite).
               </p>
               {/* <!-- only displayed on small screens 770px and smaller --> */}
               <div id="about-resume__sm-button">
@@ -54,6 +54,7 @@ export const AboutView = () => {
                     href={resume}
                     target="_blank"
                     className="navigation-list__item"
+                    rel="noreferrer"
                   >
                     <Icon title="download" /> resume
                   </a>
@@ -115,6 +116,7 @@ export const AboutView = () => {
                   href={resume}
                   target="_blank"
                   className="navigation-list__item"
+                  rel="noreferrer"
                 >
                   <Icon title="download" /> resume
                 </a>
