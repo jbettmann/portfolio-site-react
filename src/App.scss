@@ -12,7 +12,6 @@ $fire: "./img/fire.jpeg";
 
 .fire {
   background: no-repeat center/100% url($fire);
-  background-size: auto 100vh;
   transition: background 4s linear, opacity 4s linear;
   color: #fff;
 }
