@@ -22,14 +22,14 @@ export const AboutView = () => {
               <p>
                 As a brewer turned web developer, I enjoy building, an architect
                 if you will. With my experience and expertise in product
-                development, troubleshooting, problem solving and
+                development, troubleshooting, problem-solving and
                 entrepreneurialism, I thrive at orchestrating, creating and
                 constructing ideas.
               </p>
               <p>
                 My transition to development has been instinctive. Fueled by a
-                love for problem solving and learning, I strive to construct
-                user first products with an obsession to detail and efficiency
+                love for problem-solving and learning, I strive to construct
+                user first products with an obsession with detail and efficiency
                 guiding my process.
               </p>
               <p>

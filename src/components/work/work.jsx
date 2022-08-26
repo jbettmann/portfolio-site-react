@@ -57,19 +57,21 @@ export const WorkView = () => {
                     <a
                       href="https://github.com/jbettmann/myFlix-Angular-client"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <Icon title="github repo" />
                     </a>
                     <a
                       href="https://jbettmann.github.io/myFlix-Angular-client/welcome"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <Icon title="live demo" />
                     </a>
                   </div>
                   <p className="p_reverse">
-                    Using the myFlix REST API build in a previous project, this
-                    client side version of the myFlix App was build with
+                    Using the myFlix REST API built in a previous project, this
+                    client-side version of the myFlix App was built with
                     Angular. The entire UI of the app was designed with Angular
                     Material. Documentation for the project was generated with
                     TypeDoc.
@@ -100,21 +102,23 @@ export const WorkView = () => {
                     <a
                       href="https://github.com/jbettmann/pokedex-app"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <Icon title="github repo" />
                     </a>
                     <a
                       href="https://jbettmann.github.io/pokedex-app"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <Icon title="live demo" />
                     </a>
                   </div>
                   <p>
-                    This PokeDex is a small web application build with HTML,
+                    This PokeDex is a small web application built with HTML,
                     CSS, and JavaScript that loads data from an external API.
-                    Users are able to search for their favorite pokemon and view
-                    details via a modal built with Bootstrap.
+                    Users can search for their favorite pokemon and view details
+                    via a modal built with Bootstrap.
                   </p>
                 </div>
                 <div className="grid__img pokemon-img">
@@ -143,16 +147,17 @@ export const WorkView = () => {
                     <a
                       href="https://github.com/jbettmann/myFlix-app"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <Icon title="github repo" />
                     </a>
                   </div>
                   <p className="p_reverse">
-                    This REST API is the server side component to the myFlix
+                    This REST API is the server-side component of the myFlix
                     App. Node.js, MongoDB and Express of the MERN stack were
                     used to build this API and database. This project
-                    demonstrate web server framework, business logic, basic HTTP
-                    and JWT (token-based) authentication and data security.
+                    demonstrates a web server framework, business logic, basic
+                    HTTP and JWT (token-based) authentication and data security.
                   </p>
                 </div>
                 <div className="grid__img grid__img-reverse api-img">
@@ -184,16 +189,18 @@ export const WorkView = () => {
                     <a
                       href="https://github.com/jbettmann/myFlix-clent"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <Icon title="github repo" />
                     </a>
                     <a
                       href="https://bettsmyflix.netlify.app/login"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <Icon title="live demo" />
                     </a>
-                    <a href={caseStudy} target="_blank">
+                    <a href={caseStudy} target="_blank" rel="noreferrer">
                       <Icon title="case study" />
                     </a>
                   </div>
@@ -229,10 +236,18 @@ export const WorkView = () => {
                     <p> react / MUI / TDD / jest / puppeteer / aws </p>
                   </div>
                   <div className="grid__link-reverse">
-                    <a href="https://github.com/jbettmann/meet" target="_blank">
+                    <a
+                      href="https://github.com/jbettmann/meet"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <Icon title="github repo" />
                     </a>
-                    <a href="https://jbettmann.github.io/meet/" target="_blank">
+                    <a
+                      href="https://jbettmann.github.io/meet/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <Icon title="live demo" />
                     </a>
                   </div>
@@ -284,6 +299,7 @@ export const WorkView = () => {
                     <a
                       href="https://github.com/jbettmann/chat-app"
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <Icon title="github repo" />
                     </a>
