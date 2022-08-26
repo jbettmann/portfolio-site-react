@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.b78914f1.css",
-    "main.js": "/static/js/main.a30918d7.js",
+    "main.css": "/static/css/main.ac93b2cb.css",
+    "main.js": "/static/js/main.9b3aad8b.js",
     "static/js/787.42a8f168.chunk.js": "/static/js/787.42a8f168.chunk.js",
     "static/media/myFlix_React.png": "/static/media/myFlix_React.bd82cd0d337ab157ab20.png",
     "static/media/chat-home.PNG": "/static/media/chat-home.6b6cd6f2a7171bc05a5c.PNG",
     "static/media/myFlix_Angular.png": "/static/media/myFlix_Angular.2514f48435e829223703.png",
+    "static/media/fire.jpeg": "/static/media/fire.c5f9ccb774fa2fd5e92c.jpeg",
     "static/media/Case_Study.pdf": "/static/media/Case_Study.b08e758c447f8440cce4.pdf",
     "static/media/pokedex.png": "/static/media/pokedex.9acd302c97bd0ac5f6d9.png",
     "static/media/chat-room.PNG": "/static/media/chat-room.b54bff174bc8a60c1c87.PNG",
@@ -18,8 +19,8 @@
     "static/media/react.svg": "/static/media/react.758a92c70ebf88b3f3960a0cf7459020.svg",
     "static/media/email_icon.svg": "/static/media/email_icon.41a72c38b081fe98dafd39286f2f0c3f.svg",
     "static/media/live.svg": "/static/media/live.a7cd54c9303dbb7e31b8a8ba8f8d3c2e.svg",
-    "static/media/github.svg": "/static/media/github.9614ba982f2673109d5c98d3d61c3bed.svg",
-    "static/media/github_1.svg": "/static/media/github_1.72950bd7385fb59fbe1ccb9370bc9c2a.svg",
+    "static/media/github.svg": "/static/media/github.fc41816b3d4adb5ec75bb95ef9e1af40.svg",
+    "static/media/github_1.svg": "/static/media/github_1.672f867e094a5dd3c546672ec3860cc1.svg",
     "static/media/node_js.svg": "/static/media/node_js.27163021917c5c501464986421c2350d.svg",
     "index.html": "/index.html",
     "static/media/linkedin.svg": "/static/media/linkedin.2cc71370635d17063e782700844bd79d.svg",
@@ -32,12 +33,12 @@
     "static/media/css.svg": "/static/media/css.c548a22bcf7a92dd0c9c7fcd4526cdd9.svg",
     "static/media/download.svg": "/static/media/download.b0c24093148ec4d856ef05279413e249.svg",
     "static/media/angular.svg": "/static/media/angular.5c612c7b90fbf40fd344067b5e9e59da.svg",
-    "main.b78914f1.css.map": "/static/css/main.b78914f1.css.map",
-    "main.a30918d7.js.map": "/static/js/main.a30918d7.js.map",
+    "main.ac93b2cb.css.map": "/static/css/main.ac93b2cb.css.map",
+    "main.9b3aad8b.js.map": "/static/js/main.9b3aad8b.js.map",
     "787.42a8f168.chunk.js.map": "/static/js/787.42a8f168.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b78914f1.css",
-    "static/js/main.a30918d7.js"
+    "static/css/main.ac93b2cb.css",
+    "static/js/main.9b3aad8b.js"
   ]
 }
