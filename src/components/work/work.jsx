@@ -65,11 +65,12 @@ export const WorkView = () => {
                     </a>
                   </div>
                   <p>
-                    This client-side PWA was a personal project built with React
-                    and styled with Material UI. Users can create, name, edit,
-                    and run multiple timers at the same time. All data that is
-                    created is stored in the browser via localStorage, allowing
-                    for offline capability. React-countdown-circle-timer and
+                    This client-side PWA is a personal project built with React
+                    and styled with Material UI. Users can create and customize
+                    multiple timers for specific needs. They can also search
+                    for, edit or delete each timer. All data that is created is
+                    stored in the browser via localStorage, allowing for offline
+                    capability. React-countdown-circle-timer and
                     react-countdown-hook were used for animation and timer
                     functionality. <br />
                     <i>**THIS PROJECT IS CURRENTLY IN DEVELOPMENT**</i>
