@@ -10,6 +10,7 @@ import pokedex from "../../img/pokedex.png";
 import choice from "../../img/chat-app/chat-choice.jpeg";
 import chat_home from "../../img/chat-app/chat-home.PNG";
 import chatroom from "../../img/chat-app/chat-room.PNG";
+import brewBud from "../../img/brewbud.png";
 import { ModalView } from "../modal/modal";
 import caseStudy from "../../files/Case_Study.pdf";
 
@@ -34,7 +35,51 @@ export const WorkView = () => {
               <h1>my projects</h1>
             </div>
             <div className="grid">
-              {/* <!-- Project 6 REVERSE --> */}
+              {/* <!-- Project 1 NORMAL--> */}
+              {/* <!-- Grid items will live here --> */}
+              <div className="grid__item">
+                <div className="grid__content">
+                  <h2>Brew Bud Timer App</h2>
+                  {/* <!-- displays only in 1000px and smaller screens --> */}
+                  <div className="grid__img-sm brew-img">
+                    <img src={brewBud} alt="Brew Bud" onClick={getImage} />
+                  </div>
+                  {/* <!-- end of 1000px and smaller screens --> */}
+                  <div className="work_langs brew-bud">
+                    <p> html / css / javascript / Material UI / React </p>
+                  </div>
+                  <div className="grid__link">
+                    <a
+                      href="https://github.com/jbettmann/timer-app"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Icon title="github repo" />
+                    </a>
+                    <a
+                      href="https://brew-timer-app.netlify.app"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Icon title="live demo" />
+                    </a>
+                  </div>
+                  <p>
+                    This client-side PWA was a personal project built with React
+                    and styled with Material UI. Users can create, name, edit,
+                    and run multiple timers at the same time. All data that is
+                    created is stored in the browser via localStorage, allowing
+                    for offline capability. React-countdown-circle-timer and
+                    react-countdown-hook were used for animation and timer
+                    functionality. <br />
+                    <i>**THIS PROJECT IS CURRENTLY IN DEVELOPMENT**</i>
+                  </p>
+                </div>
+                <div className="grid__img brew-img">
+                  <img src={brewBud} alt="Brew Bud" onClick={getImage} />
+                </div>
+              </div>
+              {/* <!-- Project 2 REVERSE --> */}
               {/* <!-- REVERSE layout for this. Referenced in style as "reverse" --> */}
               <div className="grid__item reverse">
                 <div className="grid__content-reverse">
@@ -85,7 +130,7 @@ export const WorkView = () => {
                   />
                 </div>
               </div>
-              {/* <!-- Project 1 NORMAL--> */}
+              {/* <!-- Project 3 NORMAL--> */}
               {/* <!-- Grid items will live here --> */}
               <div className="grid__item">
                 <div className="grid__content">
@@ -126,7 +171,7 @@ export const WorkView = () => {
                 </div>
               </div>
 
-              {/* <!-- Project 2 REVERSE --> */}
+              {/* <!-- Project 4 REVERSE --> */}
               {/* <!-- REVERSE layout for this. Referenced in style as "reverse" --> */}
               <div className="grid__item reverse">
                 <div className="grid__content-reverse">
@@ -169,7 +214,7 @@ export const WorkView = () => {
                 </div>
               </div>
 
-              {/* <!-- Project 3 NORMAL --> */}
+              {/* <!-- Project 5 NORMAL --> */}
               <div className="grid__item">
                 <div className="grid__content">
                   <h2>myFlix App (React)</h2>
@@ -222,7 +267,7 @@ export const WorkView = () => {
                 </div>
               </div>
 
-              {/* <!-- Project 4 REVERSE --> */}
+              {/* <!-- Project 6 REVERSE --> */}
               {/* <!-- REVERSE layout for this. Referenced in style as "reverse" --> */}
               <div className="grid__item reverse">
                 <div className="grid__content-reverse">
@@ -264,7 +309,7 @@ export const WorkView = () => {
                 </div>
               </div>
 
-              {/* <!-- Project 5 NORMAL --> */}
+              {/* <!-- Project 7 NORMAL --> */}
               <div className="grid__item">
                 <div className="grid__content">
                   <h2>Chat App</h2>
