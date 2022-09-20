@@ -141,6 +141,16 @@ p {
   border-radius: 20px;
 }
 
+.brew-bud {
+  background-color: #6d197a;
+  filter: drop-shadow(1px 1px 3px darken(#6d197a, 10%));
+}
+
+.brew-img {
+  background-color: #e8a0f3;
+  filter: drop-shadow(1px 1px 3px darken(#e8a0f3, 50%));
+}
+
 .angular {
   background-color: #300551;
   filter: drop-shadow(1px 1px 3px darken(#300551, 10%));
@@ -151,13 +161,13 @@ p {
 }
 
 .pokemon {
-  background-color: #576b5a;
-  filter: drop-shadow(1px 1px 3px darken(#576b5a, 10%));
+  background-color: #086e70;
+  filter: drop-shadow(1px 1px 3px darken(#086e70, 10%));
 }
 
 .pokemon-img {
-  background-color: #c8e9bb;
-  filter: drop-shadow(1px 1px 3px darken(#c8e9bb, 50%));
+  background-color: #0db2b6;
+  filter: drop-shadow(1px 1px 3px darken(#0db2b6, 50%));
 }
 
 .api {
