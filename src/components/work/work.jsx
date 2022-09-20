@@ -46,7 +46,7 @@ export const WorkView = () => {
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
                   <div className="work_langs brew-bud">
-                    <p> html / css / javascript / Material UI / React </p>
+                    <p> react / javascript / material ui / netlify / pwa </p>
                   </div>
                   <div className="grid__link">
                     <a
