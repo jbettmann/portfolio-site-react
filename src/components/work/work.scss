@@ -160,7 +160,8 @@ p {
   filter: drop-shadow(1px 1px 3px darken(#f7cd9f, 50%));
   img {
     overflow: hidden;
-    width: 100%;
+    width: 100% !important;
+    border-radius: 20px !important;
   }
 }
 
