@@ -152,12 +152,16 @@ p {
 }
 
 .angular {
-  background-color: #300551;
-  filter: drop-shadow(1px 1px 3px darken(#300551, 10%));
+  background-color: #420c7f;
+  filter: drop-shadow(1px 1px 3px darken(#420c7f, 10%));
 }
 .angular-img {
-  background-color: #dbcae9;
-  filter: drop-shadow(1px 1px 3px darken(#dbcae9, 50%));
+  background-color: #f7cd9f;
+  filter: drop-shadow(1px 1px 3px darken(#f7cd9f, 50%));
+  img {
+    overflow: hidden;
+    width: 100%;
+  }
 }
 
 .pokemon {
