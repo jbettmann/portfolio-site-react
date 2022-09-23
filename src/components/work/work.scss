@@ -172,18 +172,29 @@ p {
 }
 
 .pokemon-img {
-  background-color: #78fcff;
+  background-image: linear-gradient(from bottom right, #3efdf3, #26c0bb);
+
   filter: drop-shadow(1px 1px 3px darken(#78fcff, 50%));
+  img {
+    overflow: hidden;
+    width: 100% !important;
+    border-radius: 20px !important;
+  }
 }
 
 .api {
-  background-color: #185fa7;
-  filter: drop-shadow(1px 1px 3px darken(#185fa7, 10%));
+  background-color: #09527e;
+  filter: drop-shadow(1px 1px 3px darken(#09527e, 10%));
 }
 
 .api-img {
-  background-color: #83b7ed;
-  filter: drop-shadow(1px 1px 3px darken(#83b7ed, 50%));
+  background-color: #61b8ec;
+  filter: drop-shadow(1px 1px 3px darken(#61b8ec, 50%));
+  img {
+    overflow: hidden;
+    width: 100% !important;
+    border-radius: 20px !important;
+  }
 }
 
 .react {
@@ -192,8 +203,13 @@ p {
 }
 
 .react-img {
-  background-color: #aeaeae;
-  filter: drop-shadow(1px 1px 3px darken(#aeaeae, 50%));
+  background-color: #deb8fd;
+  filter: drop-shadow(1px 1px 3px darken(#deb8fd, 50%));
+  img {
+    overflow: hidden;
+    width: 100% !important;
+    border-radius: 20px !important;
+  }
 }
 
 .meet {
@@ -208,13 +224,19 @@ p {
 }
 
 .chat {
-  background-color: #5f675a;
-  filter: drop-shadow(1px 1px 3px darken(#5f675a, 10%));
+  background-color: #777e92;
+  filter: drop-shadow(1px 1px 3px darken(#777e92, 10%));
 }
 
 .chat-img {
-  background-color: #e9f3e0;
-  filter: drop-shadow(1px 1px 3px darken(#e9f3e0, 50%));
+  background-image: linear-gradient(#eaf4e1, #eaf4e1, #7c859c, #8791ab);
+  box-shadow: 0px 1px 9px 0px #9199b1, 0px -1px 10px 0px #68993b;
+  img {
+    overflow: hidden;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 20px !important;
+  }
 }
 
 .grid__img {
@@ -237,9 +259,6 @@ p {
   width: 60%;
   display: flex;
   justify-content: space-between;
-}
-.chat-app_height {
-  width: 32% !important;
 }
 
 .work_links {

@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import { Icon } from "../../icons";
 import "./work.scss";
-import meet from "../../img/meet.png";
+
 import myFlix_Angular from "../../img/myFlix_Angular.png";
 import myFlix_database from "../../img/myFlix_database.png";
 import myFlix_React from "../../img/myFlix_React.png";
 import pokedex from "../../img/pokedex.png";
-import choice from "../../img/chat-app/chat-choice.jpeg";
-import chat_home from "../../img/chat-app/chat-home.PNG";
-import chatroom from "../../img/chat-app/chat-room.PNG";
+
+import chatApp from "../../img/chat-app.png";
+
 import brewAssit from "../../img/brewbud.png";
 import { ModalView } from "../modal/modal";
 import caseStudy from "../../files/Case_Study.pdf";
@@ -138,26 +138,12 @@ export const WorkView = () => {
                   <h2>Chat App</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
                   <div className="grid__img-sm chat-img">
-                    <div>
-                      <img
-                        src={chat_home}
-                        alt="Chat App"
-                        className="chat-app_height"
-                        onClick={getImage}
-                      />
-                      <img
-                        src={chatroom}
-                        alt="Chat App chatroom"
-                        className="chat-app_height"
-                        onClick={getImage}
-                      />
-                      <img
-                        src={choice}
-                        alt="Chat App dialog options"
-                        className="chat-app_height"
-                        onClick={getImage}
-                      />
-                    </div>
+                    <img
+                      src={chatApp}
+                      alt="Chat App"
+                      className="chat-app_height"
+                      onClick={getImage}
+                    />
                   </div>
                   {/* <!-- end of 1000px and smaller view --> */}
                   <div className="work_langs chat">
@@ -180,27 +166,12 @@ export const WorkView = () => {
                   </p>
                 </div>
                 <div className="grid__img chat-img">
-                  <div>
-                    <img
-                      src={chat_home}
-                      alt="Chat App"
-                      className="chat-app_height"
-                      onClick={getImage}
-                    />
-                    <img
-                      src={chatroom}
-                      alt="Chat App chatroom
-                      "
-                      className="chat-app_height"
-                      onClick={getImage}
-                    />
-                    <img
-                      src={choice}
-                      alt="Chat App dialog options"
-                      className="chat-app_height"
-                      onClick={getImage}
-                    />
-                  </div>
+                  <img
+                    src={chatApp}
+                    alt="Chat App"
+                    className="chat-app_height"
+                    onClick={getImage}
+                  />
                 </div>
               </div>
 
