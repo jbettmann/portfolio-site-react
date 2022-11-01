@@ -11,8 +11,8 @@ export const Homepage = () => {
           <div className="homepage__intro">
             <h1>Jordan Bettmann</h1>
             <p>
-              A front end developer from Denver, CO with a background <br />
-              in brewing, business management and graphic design. <br />
+              A front end developer from Denver, CO with a background in
+              brewing, business management and graphic design.
             </p>
           </div>
           <div>
