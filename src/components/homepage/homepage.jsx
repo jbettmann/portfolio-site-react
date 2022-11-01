@@ -8,13 +8,11 @@ export const Homepage = () => {
     <Container>
       <main className="homepage">
         <div className="homepage__content">
-          <div>
-            <h1>hello world!</h1>
+          <div className="homepage__intro">
+            <h1>Jordan Bettmann</h1>
             <p>
-              My name is Jordan Bettmann
-              <br />
-              I'm a web developer from Denver, CO with a background <br />
-              in brewing, business management and graphic design.
+              A front end developer from Denver, CO with a background <br />
+              in brewing, business management and graphic design. <br />
             </p>
           </div>
           <div>
