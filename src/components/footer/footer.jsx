@@ -14,6 +14,7 @@ export const Footer = () => {
           href="https://github.com/jbettmann"
           target="_blank"
           className="social-media__icon"
+          rel="noreferrer"
         >
           <Icon title="github" />
         </a>
@@ -21,6 +22,7 @@ export const Footer = () => {
           href="https://www.linkedin.com/in/jordan-bettmann-268a39228/"
           target="_blank"
           className="social-media__icon"
+          rel="noreferrer"
         >
           <Icon title="linkedin" />
         </a>
@@ -28,9 +30,13 @@ export const Footer = () => {
           href="https://twitter.com/gordev5"
           target="_blank"
           className="social-media__icon"
+          rel="noreferrer"
         >
           <Icon title="twitter" />
         </a>
+        <div>
+          <p className="copywrite">© 2022 Jordan Bettmann</p>
+        </div>
       </div>
     </Navbar>
   );
