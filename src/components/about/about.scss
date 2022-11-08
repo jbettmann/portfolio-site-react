@@ -29,7 +29,7 @@ $shadow-color: hsl(176, 32%, 20%, 0.9);
   display: flex;
   align-items: center;
   max-width: 1200px;
-  margin: 20px auto;
+  margin: 1.5rem auto 5rem auto;
   flex-direction: row-reverse;
 }
 
@@ -106,7 +106,7 @@ $shadow-color: hsl(176, 32%, 20%, 0.9);
   .about {
     flex-direction: column-reverse;
     width: 90%;
-    margin: 20px auto; /* centers box in middle of page */
+
     text-align: center;
   }
 
