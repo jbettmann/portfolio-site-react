@@ -296,7 +296,7 @@ p {
     =================================== */
 @media all and (max-width: 1000px) {
   .grid {
-    grid-gap: 70px;
+    grid-gap: 40px;
   }
 
   .grid__item {
@@ -331,7 +331,6 @@ p {
 
   .grid__img-sm > img {
     width: 80%;
-    padding: 2rem 0;
   }
 
   .grid__img-sm > div {
