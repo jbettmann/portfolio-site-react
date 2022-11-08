@@ -9,10 +9,11 @@ export const Homepage = () => {
       <main className="homepage">
         <div className="homepage__content">
           <div className="homepage__intro">
-            <h1>Jordan Bettmann</h1>
+            <h1>welcome.</h1>
             <p>
-              A front end developer from Denver, CO with a background in
-              brewing, business management and graphic design.
+              My name is Jordan Bettmann, I'm a front-end developer from Denver,
+              CO with a background in brewing, business management and graphic
+              design.
             </p>
           </div>
           <div>
