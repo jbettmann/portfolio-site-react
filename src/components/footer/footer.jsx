@@ -8,7 +8,6 @@ export const Footer = () => {
   return (
     // <!-- Footer with links to social media profiles -->
     <Navbar className="page-footer">
-      <p>Find me on</p>
       <div className="social-media">
         <a
           href="https://github.com/jbettmann"
