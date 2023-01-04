@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import lazyAbout from "../../img/about_photo_1_lazy.jpg";
 import about from "../../img/about_photo_1.jpg";
 import { Icon } from "../../icons";
 import resume from "../../files/Bettmann_Jordan_Resume.pdf";
@@ -7,6 +8,32 @@ import resume from "../../files/Bettmann_Jordan_Resume.pdf";
 import "./about.scss";
 
 export const AboutView = () => {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    // Intersectional Observer for Lazy Image Load
+    const imgTarget = ref.current;
+
+    const loadImg = (entries, observer) => {
+      const [entry] = entries;
+      console.log(entry);
+
+      if (!entry.isIntersecting) return; // lazy-img
+      // Replace src with data-src
+      entry.target.src = entry.target.dataset.src;
+
+      entry.target.addEventListener("load", () => {
+        entry.target.classList.remove("lazy-img");
+      });
+      observer.unobserve(entry.target);
+    };
+    const imgObserver = new IntersectionObserver(loadImg, {
+      root: null,
+      threshold: 0,
+    });
+
+    imgObserver.observe(imgTarget);
+  });
   return (
     <Container>
       <Row>
@@ -105,9 +132,11 @@ export const AboutView = () => {
               {/* <!-- profile photo (about photo) --> */}
               <div>
                 <img
-                  src={about}
+                  src={lazyAbout}
+                  data-src={about}
+                  ref={ref}
                   alt="Jordan out backpacking"
-                  className="about__portrait"
+                  className="about__portrait lazy-img"
                 />
               </div>
               {/* <!-- link to download resume --> */}

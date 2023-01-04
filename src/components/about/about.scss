@@ -40,6 +40,11 @@ $shadow-color: hsl(176, 32%, 20%, 0.9);
   margin-left: 30px;
 }
 
+.lazy-img {
+  width: 320px;
+  filter: blur(10px);
+}
+
 #about__text {
   margin: 0 30px;
   flex: 1 1 200px;
