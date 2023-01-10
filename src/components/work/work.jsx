@@ -4,13 +4,18 @@ import { Icon } from "../../icons";
 import "./work.scss";
 
 import myFlix_Angular from "../../img/myFlix_Angular.png";
+import myFlix_Angular_lazy from "../../img/myFlix_Angular_lazy.png";
 import myFlix_database from "../../img/myFlix_database.png";
+import myFlix_database_lazy from "../../img/myFlix_database_lazy.png";
 import myFlix_React from "../../img/myFlix_React.png";
+import myFlix_React_lazy from "../../img/myFlix_React_lazy.png";
 import pokedex from "../../img/pokedex.png";
 
 import chatApp from "../../img/chat-app.png";
-
+import chatApp_lazy from "../../img/chat-app_lazy.png";
 import brewAssit from "../../img/brewbud.png";
+import brewAssitLazy from "../../img/brewbud-lazy.png";
+
 import { ModalView } from "../modal/modal";
 import caseStudy from "../../files/Case_Study.pdf";
 
@@ -25,6 +30,27 @@ export const WorkView = () => {
     setShow(true);
   };
 
+    // Lazy Load image with Intersection Observer *******************
+    const loadImg = (entries, observer) => {
+      const [entry] = entries;
+      // prevent all from loading on page load
+      if (!entry.isIntersecting) return;
+      // Replace src with data-src
+      entry.target.src = entry.target.dataset.src;
+      // listen for larger img to load
+      entry.target.addEventListener("load", () => {
+        entry.target.classList.remove("lazy-img");
+      });
+      // stop observing once in view
+      observer.unobserve(entry.target);
+    };
+    const imgObserver = new IntersectionObserver(loadImg, {
+      root: null,
+      threshold: 1,
+    });
+
+    imgs.forEach((img) => imgObserver.observe(img));
+  }, []);
   return (
     <>
       <Row>
@@ -42,7 +68,12 @@ export const WorkView = () => {
                   <h2>BrewAssit Timer App</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
                   <div className="grid__img-sm brew-img">
-                    <img src={brewAssit} alt="Brew Bud" onClick={getImage} />
+                    <img
+                      src={brewAssit}
+                      data-src={brewAssit}
+                      alt="Brew Bud"
+                      onClick={getImage}
+                    />
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
                   <div className="work_langs brew-bud">
@@ -77,7 +108,12 @@ export const WorkView = () => {
                   </p>
                 </div>
                 <div className="grid__img brew-img">
-                  <img src={brewAssit} alt="Brew Bud" onClick={getImage} />
+                  <img
+                    src={brewAssit}
+                    data-src={brewAssit}
+                    alt="Brew Bud"
+                    onClick={getImage}
+                  />
                 </div>
               </div>
               {/* <!-- Project REVERSE --> */}
@@ -88,7 +124,9 @@ export const WorkView = () => {
                   {/* <!-- displays only in 1000px and smaller screens --> */}
                   <div className="grid__img-sm angular-img">
                     <img
-                      src={myFlix_Angular}
+                      src={myFlix_Angular_lazy}
+                      data-src={myFlix_Angular}
+                      className="lazy-img "
                       alt="myFlix Angular App"
                       onClick={getImage}
                     />
@@ -125,7 +163,9 @@ export const WorkView = () => {
                 </div>
                 <div className="grid__img grid__img-reverse angular-img">
                   <img
-                    src={myFlix_Angular}
+                    src={myFlix_Angular_lazy}
+                    data-src={myFlix_Angular}
+                    className="lazy-img "
                     alt="myFlix Angular App"
                     onClick={getImage}
                   />
@@ -139,7 +179,8 @@ export const WorkView = () => {
                   {/* <!-- displays only in 1000px and smaller screens --> */}
                   <div className="grid__img-sm chat-img">
                     <img
-                      src={chatApp}
+                      src={chatApp_lazy}
+                      data-src={chatApp}
                       alt="Chat App"
                       className="chat-app_height"
                       onClick={getImage}
@@ -167,7 +208,8 @@ export const WorkView = () => {
                 </div>
                 <div className="grid__img chat-img">
                   <img
-                    src={chatApp}
+                    src={chatApp_lazy}
+                    data-src={chatApp}
                     alt="Chat App"
                     className="chat-app_height"
                     onClick={getImage}
@@ -183,7 +225,8 @@ export const WorkView = () => {
                   {/* <!-- displays only in 1000px and smaller screens --> */}
                   <div className="grid__img-sm api-img">
                     <img
-                      src={myFlix_database}
+                      src={myFlix_database_lazy}
+                      data-src={myFlix_database}
                       alt="myFlix-API tested in Postman"
                       onClick={getImage}
                     />
@@ -211,7 +254,8 @@ export const WorkView = () => {
                 </div>
                 <div className="grid__img grid__img-reverse api-img">
                   <img
-                    src={myFlix_database}
+                    src={myFlix_database_lazy}
+                    data-src={myFlix_database}
                     alt="myFlix-API tested in Postman"
                     onClick={getImage}
                   />
@@ -225,7 +269,8 @@ export const WorkView = () => {
                   {/* <!-- displays only in 1000px and smaller screens --> */}
                   <div className="grid__img-sm react-img">
                     <img
-                      src={myFlix_React}
+                      src={myFlix_React_lazy}
+                      data-src={myFlix_React}
                       alt="myFlix React"
                       onClick={getImage}
                     />
@@ -264,7 +309,8 @@ export const WorkView = () => {
                 </div>
                 <div className="grid__img react-img">
                   <img
-                    src={myFlix_React}
+                    src={myFlix_React_lazy}
+                    data-src={myFlix_React}
                     alt="myFlix React"
                     onClick={getImage}
                   />
@@ -278,7 +324,12 @@ export const WorkView = () => {
                   <h2>PokeDex</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
                   <div className="grid__img-sm pokemon-img">
-                    <img src={pokedex} alt="PokeDex" onClick={getImage} />
+                    <img
+                      src={pokedex_lazy}
+                      data-src={pokedex}
+                      alt="PokeDex"
+                      onClick={getImage}
+                    />
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
                   <div className="work_langs work_langs-reverse pokemon">
@@ -308,7 +359,12 @@ export const WorkView = () => {
                   </p>
                 </div>
                 <div className="grid__img grid__img-reverse pokemon-img">
-                  <img src={pokedex} alt="PokeDex" onClick={getImage} />
+                  <img
+                    src={pokedex_lazy}
+                    data-src={pokedex}
+                    alt="PokeDex"
+                    onClick={getImage}
+                  />
                 </div>
               </div>
               {/* <!-- Project REVERSE --> */}

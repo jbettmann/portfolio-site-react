@@ -40,6 +40,12 @@ $header-font-weight: 700;
 .grid__item {
   display: flex;
   max-width: 1200px;
+  transition: transform 1s, opacity 1s;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
 
 .reverse {
@@ -139,6 +145,10 @@ p {
   flex: 1 0 500px;
   transition: transform 0.3s;
   border-radius: 20px;
+}
+
+.lazy-img {
+  filter: blur(10px);
 }
 
 .brew-bud {

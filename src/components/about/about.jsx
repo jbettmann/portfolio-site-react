@@ -33,7 +33,7 @@ export const AboutView = () => {
     });
 
     imgObserver.observe(imgTarget);
-  });
+  }, []);
   return (
     <Container>
       <Row>
