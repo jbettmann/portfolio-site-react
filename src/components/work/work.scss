@@ -310,6 +310,9 @@ img {
   .grid {
     grid-gap: 40px;
   }
+  .grid__img {
+    display: none;
+  }
 
   .grid__item {
     flex-direction: column;
@@ -335,10 +338,6 @@ img {
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-  }
-
-  .grid__img {
-    display: none;
   }
 
   .grid__img-sm > img {
