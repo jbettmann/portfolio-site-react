@@ -1,14 +1,30 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./homepage.scss";
 
 export const Homepage = () => {
+  const welcomingRef = useRef(null);
+  const getStartedRef = useRef(null);
+
+  useEffect(() => {
+    const welcoming = welcomingRef.current;
+    const getStarted = getStartedRef.current;
+
+    setTimeout(() => {
+      welcoming.classList.remove("hidden__intro");
+    }, 400);
+
+    setTimeout(() => {
+      getStarted.classList.remove("hidden");
+    }, 1300);
+  }, []);
+
   return (
     <Container>
       <main className="homepage">
         <div className="homepage__content">
-          <div className="homepage__intro">
+          <div ref={welcomingRef} className="homepage__intro hidden__intro">
             <h1>welcome.</h1>
             <p>
               My name is Jordan Bettmann, I'm a front-end developer from Denver,
@@ -16,7 +32,7 @@ export const Homepage = () => {
               design.
             </p>
           </div>
-          <div>
+          <div ref={getStartedRef} className="get-started hidden">
             <h2>lets get started...</h2>
             <div className="homepage-button__container">
               {/* <!-- directs use to about page --> */}
