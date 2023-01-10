@@ -146,7 +146,7 @@ export const WorkView = () => {
                 <div className="grid__content-reverse">
                   <h2>myFlix App (Angular)</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
-                  <div className="grid__img-sm angular-im">
+                  <div className="grid__img-sm angular-img">
                     <img
                       src={myFlix_Angular_lazy}
                       data-src={myFlix_Angular}
