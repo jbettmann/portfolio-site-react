@@ -57,7 +57,6 @@ export const WorkView = () => {
     // Lazy Load image with Intersection Observer *******************
     const loadImg = (entries, observer) => {
       const [entry] = entries;
-      console.log(entry.target);
       // prevent all from loading on page load
       if (!entry.isIntersecting) return;
       // Replace src with data-src
