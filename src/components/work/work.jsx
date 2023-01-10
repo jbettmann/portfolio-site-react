@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Col, Row } from "react-bootstrap";
 import { Icon } from "../../icons";
 import "./work.scss";
@@ -10,7 +10,7 @@ import myFlix_database_lazy from "../../img/myFlix_database_lazy.png";
 import myFlix_React from "../../img/myFlix_React.png";
 import myFlix_React_lazy from "../../img/myFlix_React_lazy.png";
 import pokedex from "../../img/pokedex.png";
-
+import pokedex_lazy from "../../img/pokedex_lazy.png";
 import chatApp from "../../img/chat-app.png";
 import chatApp_lazy from "../../img/chat-app_lazy.png";
 import brewAssit from "../../img/brewbud.png";
@@ -29,6 +29,30 @@ export const WorkView = () => {
     setImage(image);
     setShow(true);
   };
+
+  useEffect(() => {
+    const imgs = document.querySelectorAll("img");
+    const section = document.querySelectorAll(".grid__project");
+
+    // Scroll Reveal with Intersection Observer **********************
+    const sectionReveal = function (entries, observer) {
+      const [entry] = entries;
+      // prevent all from loading on page load
+      if (!entry.isIntersecting) return;
+      entry.target.classList.remove("hidden");
+      // stops observation of section. No more events
+      observer.unobserve(entry.target);
+    };
+
+    const sectionObserver = new IntersectionObserver(sectionReveal, {
+      root: null,
+      threshold: 0.1,
+    });
+
+    section.forEach((section) => {
+      sectionObserver.observe(section);
+      section.classList.add("hidden");
+    });
 
     // Lazy Load image with Intersection Observer *******************
     const loadImg = (entries, observer) => {
@@ -104,7 +128,6 @@ export const WorkView = () => {
                     capability. React-countdown-circle-timer and
                     react-countdown-hook were used for animation and timer
                     functionality. <br />
-                    <i>**THIS PROJECT IS CURRENTLY IN DEVELOPMENT**</i>
                   </p>
                 </div>
                 <div className="grid__img brew-img">
@@ -118,11 +141,11 @@ export const WorkView = () => {
               </div>
               {/* <!-- Project REVERSE --> */}
               {/* <!-- REVERSE layout for this. Referenced in style as "reverse" --> */}
-              <div className="grid__item reverse">
+              <div className="grid__item grid__project reverse">
                 <div className="grid__content-reverse">
                   <h2>myFlix App (Angular)</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
-                  <div className="grid__img-sm angular-img">
+                  <div className="grid__img-sm angular-im lazy-img">
                     <img
                       src={myFlix_Angular_lazy}
                       data-src={myFlix_Angular}
@@ -161,7 +184,7 @@ export const WorkView = () => {
                     TypeDoc.
                   </p>
                 </div>
-                <div className="grid__img grid__img-reverse angular-img">
+                <div className="grid__img grid__img-reverse angular-img lazy-img">
                   <img
                     src={myFlix_Angular_lazy}
                     data-src={myFlix_Angular}
@@ -173,7 +196,7 @@ export const WorkView = () => {
               </div>
 
               {/* <!-- Project NORMAL --> */}
-              <div className="grid__item">
+              <div className="grid__item grid__project">
                 <div className="grid__content">
                   <h2>Chat App</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
@@ -219,7 +242,7 @@ export const WorkView = () => {
 
               {/* <!-- Project REVERSE --> */}
               {/* <!-- REVERSE layout for this. Referenced in style as "reverse" --> */}
-              <div className="grid__item reverse">
+              <div className="grid__item grid__project reverse">
                 <div className="grid__content-reverse">
                   <h2>myFlix API</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
@@ -263,7 +286,7 @@ export const WorkView = () => {
               </div>
 
               {/* <!-- Project  NORMAL --> */}
-              <div className="grid__item">
+              <div className="grid__item grid__project">
                 <div className="grid__content">
                   <h2>myFlix App (React)</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
@@ -319,7 +342,7 @@ export const WorkView = () => {
 
               {/* <!-- Project REVERSE--> */}
               {/* <!-- REVERSE layout for this. Referenced in style as "reverse" --> */}
-              <div className="grid__item reverse">
+              <div className="grid__item grid__project reverse">
                 <div className="grid__content-reverse">
                   <h2>PokeDex</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
@@ -369,7 +392,7 @@ export const WorkView = () => {
               </div>
               {/* <!-- Project REVERSE --> */}
               {/* <!-- REVERSE layout for this. Referenced in style as "reverse" --> */}
-              {/* <div className="grid__item reverse">
+              {/* <div className="grid__item grid__project reverse">
                 <div className="grid__content-reverse">
                   <h2>Meet App</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> 
