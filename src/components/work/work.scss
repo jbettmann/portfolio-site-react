@@ -283,7 +283,7 @@ img {
   =================================== */
 @media all and (max-width: 500px) {
   .work_langs {
-    width: 95%;
+    width: 100%;
   }
 }
 /* ===================================
@@ -291,7 +291,7 @@ img {
     =================================== */
 @media all and (max-width: 604px) {
   .grid {
-    margin: 1rem;
+    margin: 1rem 1.5rem;
   }
 }
 /* ====================================================
@@ -331,10 +331,9 @@ img {
   }
   .grid__img-sm {
     display: flex;
-    /* margin: auto 0; */
-    /* background-color: #d8bc73; */
+    width: 100%;
     flex: 0 1;
-    margin: 0.8rem 0.8rem 1.5rem 0.8rem;
+    margin: 0.8rem 0rem 1.5rem 0rem;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
