@@ -146,9 +146,11 @@ p {
   transition: transform 0.3s;
   border-radius: 20px;
 }
-
+img {
+  transition: filter 0.5s;
+}
 .lazy-img {
-  filter: blur(10px);
+  filter: blur(20px);
 }
 
 .brew-bud {

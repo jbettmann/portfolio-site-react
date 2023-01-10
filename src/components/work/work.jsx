@@ -57,6 +57,7 @@ export const WorkView = () => {
     // Lazy Load image with Intersection Observer *******************
     const loadImg = (entries, observer) => {
       const [entry] = entries;
+      console.log(entry.target);
       // prevent all from loading on page load
       if (!entry.isIntersecting) return;
       // Replace src with data-src
@@ -145,11 +146,11 @@ export const WorkView = () => {
                 <div className="grid__content-reverse">
                   <h2>myFlix App (Angular)</h2>
                   {/* <!-- displays only in 1000px and smaller screens --> */}
-                  <div className="grid__img-sm angular-im lazy-img">
+                  <div className="grid__img-sm angular-im">
                     <img
                       src={myFlix_Angular_lazy}
                       data-src={myFlix_Angular}
-                      className="lazy-img "
+                      className="lazy-img"
                       alt="myFlix Angular App"
                       onClick={getImage}
                     />
@@ -184,11 +185,11 @@ export const WorkView = () => {
                     TypeDoc.
                   </p>
                 </div>
-                <div className="grid__img grid__img-reverse angular-img lazy-img">
+                <div className="grid__img grid__img-reverse angular-img">
                   <img
                     src={myFlix_Angular_lazy}
                     data-src={myFlix_Angular}
-                    className="lazy-img "
+                    className="lazy-img"
                     alt="myFlix Angular App"
                     onClick={getImage}
                   />
@@ -205,7 +206,7 @@ export const WorkView = () => {
                       src={chatApp_lazy}
                       data-src={chatApp}
                       alt="Chat App"
-                      className="chat-app_height"
+                      className="chat-app_height lazy-img"
                       onClick={getImage}
                     />
                   </div>
@@ -234,7 +235,7 @@ export const WorkView = () => {
                     src={chatApp_lazy}
                     data-src={chatApp}
                     alt="Chat App"
-                    className="chat-app_height"
+                    className="chat-app_height lazy-img"
                     onClick={getImage}
                   />
                 </div>
@@ -250,6 +251,7 @@ export const WorkView = () => {
                     <img
                       src={myFlix_database_lazy}
                       data-src={myFlix_database}
+                      className="lazy-img"
                       alt="myFlix-API tested in Postman"
                       onClick={getImage}
                     />
@@ -279,6 +281,7 @@ export const WorkView = () => {
                   <img
                     src={myFlix_database_lazy}
                     data-src={myFlix_database}
+                    className="lazy-img"
                     alt="myFlix-API tested in Postman"
                     onClick={getImage}
                   />
@@ -294,6 +297,7 @@ export const WorkView = () => {
                     <img
                       src={myFlix_React_lazy}
                       data-src={myFlix_React}
+                      className="lazy-img"
                       alt="myFlix React"
                       onClick={getImage}
                     />
@@ -334,6 +338,7 @@ export const WorkView = () => {
                   <img
                     src={myFlix_React_lazy}
                     data-src={myFlix_React}
+                    className="lazy-img"
                     alt="myFlix React"
                     onClick={getImage}
                   />
@@ -350,6 +355,7 @@ export const WorkView = () => {
                     <img
                       src={pokedex_lazy}
                       data-src={pokedex}
+                      className="lazy-img"
                       alt="PokeDex"
                       onClick={getImage}
                     />
@@ -385,6 +391,7 @@ export const WorkView = () => {
                   <img
                     src={pokedex_lazy}
                     data-src={pokedex}
+                    className="lazy-img"
                     alt="PokeDex"
                     onClick={getImage}
                   />
