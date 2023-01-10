@@ -78,6 +78,10 @@ $header-font-weight: 500;
 .navbar-nav {
   justify-content: flex-end;
 }
+.navbar {
+  width: 100%;
+  max-width: 1400px;
+}
 
 /* ===================================
        Screen sizes up to 329px

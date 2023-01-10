@@ -31,10 +31,10 @@ $header-font-weight: 700;
 .grid {
   display: grid;
   justify-items: center;
+  padding: 3rem 0;
   /* grid-template-columns: 300px 300px 300px; fractions are better than pixels - they are responsive */
   grid-template-columns: 1fr;
   grid-gap: 120px;
-  margin: 2.5rem;
 }
 
 .grid__item {
@@ -289,11 +289,11 @@ img {
 /* ===================================
          Screen sizes up to 604px
     =================================== */
-@media all and (max-width: 604px) {
-  .grid {
-    margin: 1rem 1.5rem;
-  }
-}
+// @media all and (max-width: 604px) {
+//   .grid {
+//     margin: 1rem 1.5rem;
+//   }
+// }
 /* ====================================================
         Screen sizes between 605px and 1000px
   ====================================================== */
