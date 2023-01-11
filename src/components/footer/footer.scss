@@ -5,6 +5,12 @@
   margin-top: auto;
   margin-bottom: 1rem;
   align-items: center;
+  transition: transform 2s ease 6s, opacity 2s ease 6s;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(150px);
 }
 
 .social-media__icon {

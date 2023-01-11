@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+
 import { Navbar } from "react-bootstrap";
 import { Icon } from "../../icons";
 
 import "./footer.scss";
 
 export const Footer = () => {
+  const footerRef = useRef(null);
+  useEffect(() => {
+    const footerNav = footerRef.current;
+    footerNav.classList.remove("hidden");
+  });
   return (
     // <!-- Footer with links to social media profiles -->
-    <Navbar className="page-footer">
+    <Navbar ref={footerRef} className="page-footer hidden">
       <div className="social-media">
         <a
           href="https://github.com/jbettmann"

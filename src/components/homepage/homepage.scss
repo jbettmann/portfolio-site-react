@@ -30,14 +30,14 @@ $h1-size: 4rem;
   font-size: $h1-size;
 }
 .homepage__intro {
-  transition: transform 1s, opacity 1s;
+  transition: transform 1s ease 400ms, opacity 1s ease 400ms;
   p {
     margin-bottom: 3rem;
   }
 }
 
 .get-started {
-  transition: transform 1s, opacity 1s;
+  transition: transform 1s ease 2.5s, opacity 1s ease 2.5s;
 }
 
 /* index page portrait */
@@ -56,15 +56,35 @@ $h1-size: 4rem;
 }
 
 .homepage-button {
-  margin: 0.5rem;
-}
-
-#middle {
-  background-color: lighten($primary-color, 5%);
 }
 
 #light {
+  will-change: transform;
+  transition: transform 2s ease 3.5s, opacity 2s ease 3.5s;
   background-color: lighten($primary-color, 10%);
+}
+.left {
+  opacity: 0;
+  transform: translate3d(-400px, 450px, 0);
+}
+
+#middle {
+  will-change: transform;
+  transition: transform 2s ease 4.5s, opacity 2s ease 4.5s;
+  background-color: lighten($primary-color, 5%);
+}
+.center {
+  opacity: 0;
+  transform: translate3d(0, 450px, 0);
+}
+
+#dark {
+  will-change: transform;
+  transition: transform 2s ease 5.5s, opacity 2s ease 5.5s;
+}
+.right {
+  opacity: 0;
+  transform: translate3d(400px, 450px, 0);
 }
 
 /* ===================================

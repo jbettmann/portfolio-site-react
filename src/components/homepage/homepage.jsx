@@ -7,17 +7,44 @@ export const Homepage = () => {
   const welcomingRef = useRef(null);
   const getStartedRef = useRef(null);
 
+  //homepage button refs
+  const leftButtonRef = useRef(null);
+  const centerButtonRef = useRef(null);
+  const rightButtonRef = useRef(null);
+
   useEffect(() => {
+    const app = document.querySelector(".App");
     const welcoming = welcomingRef.current;
     const getStarted = getStartedRef.current;
 
-    setTimeout(() => {
-      welcoming.classList.remove("hidden__intro");
-    }, 400);
+    // homepage button animation
+    const leftButton = leftButtonRef.current;
+    const centerButton = centerButtonRef.current;
+    const rightButton = rightButtonRef.current;
+
+    // welcome Timeout
+
+    welcoming.classList.remove("hidden__intro");
+
+    // lets get started timeout
+
+    getStarted.classList.remove("hidden");
+
+    leftButton.classList.remove("left");
+
+    centerButton.classList.remove("center");
+
+    rightButton.classList.remove("right");
 
     setTimeout(() => {
-      getStarted.classList.remove("hidden");
-    }, 1300);
+      app.style.overflow = "auto";
+      leftButton.style.transition =
+        "transform 200ms ease-in 0s, filter 200ms ease-in 0s";
+      centerButton.style.transition =
+        "transform 200ms ease-in 0s, filter 200ms ease-in 0s";
+      rightButton.style.transition =
+        "transform 200ms ease-in 0s, filter 200ms ease-in 0s";
+    }, 8100);
   }, []);
 
   return (
@@ -32,19 +59,21 @@ export const Homepage = () => {
               design.
             </p>
           </div>
-          <div ref={getStartedRef} className="get-started hidden">
-            <h2>lets get started...</h2>
+          <div>
+            <h2 ref={getStartedRef} className="get-started hidden">
+              lets get started...
+            </h2>
             <div className="homepage-button__container">
               {/* <!-- directs use to about page --> */}
-              <div className="button" id="light">
+              <div ref={leftButtonRef} className="button left" id="light">
                 <Link to="about">About Me</Link>
               </div>
               {/* <!-- directs user to work page --> */}
-              <div className="button" id="middle">
+              <div ref={centerButtonRef} className="button center " id="middle">
                 <Link to="projects">Projects</Link>
               </div>
               {/* <!-- sends email --> */}
-              <div className="button">
+              <div ref={rightButtonRef} className="button right " id="dark">
                 <a href="mailto:hello@jordanbettmann.com">Get In Touch</a>
               </div>
             </div>
