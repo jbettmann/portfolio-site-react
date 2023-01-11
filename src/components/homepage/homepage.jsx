@@ -23,11 +23,8 @@ export const Homepage = () => {
     const rightButton = rightButtonRef.current;
 
     // welcome Timeout
-
     welcoming.classList.remove("hidden__intro");
-
     // lets get started timeout
-
     getStarted.classList.remove("hidden");
 
     leftButton.classList.remove("left");
