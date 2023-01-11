@@ -41,7 +41,7 @@ export const Homepage = () => {
         "transform 200ms ease-in 0s, filter 200ms ease-in 0s";
       rightButton.style.transition =
         "transform 200ms ease-in 0s, filter 200ms ease-in 0s";
-    }, 8100);
+    }, 6100);
   }, []);
 
   return (

@@ -9,7 +9,7 @@ import { Footer } from "../footer/footer";
 
 import "./main-view.scss";
 
-export const MainView = () => {
+export const MainView = ({ setAppOverFlow }) => {
   const [footer, setFooter] = useState(true);
 
   // sets footer to false and hides Footer Component when ContactView is displayed
@@ -27,6 +27,7 @@ export const MainView = () => {
       <NavigationBar
         hideFooter={hideFooter}
         showFooter={showFooter}
+        setAppOverFlow={setAppOverFlow}
         fixed="top"
       />
       <Routes>

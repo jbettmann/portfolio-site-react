@@ -1,10 +1,16 @@
 import "./App.scss";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 import { MainView } from "./components/main-view/main-view";
 import { BrowserRouter } from "react-router-dom";
 
 function App() {
+  // handle App's overflow style change
+  const setAppOverFlow = () => {
+    const app = document.querySelector(".App");
+    app.style.overflow = "auto";
+  };
+
   const pressed = [];
   const secretCode = "dracarys";
   const secretCodeWest = "fire";
@@ -31,7 +37,7 @@ function App() {
   return (
     <div className={fire ? "App fire" : "App"}>
       <BrowserRouter>
-        <MainView />
+        <MainView setAppOverFlow={setAppOverFlow} />
       </BrowserRouter>
     </div>
   );

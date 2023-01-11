@@ -1,11 +1,11 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import { NavLink, Link } from "react-router-dom";
-import { ReactComponent as Logo } from "../../img/logo/logo.svg";
+import { ReactComponent as Logo } from "../../img/logo/logo2.svg";
 
 import "./navbar.scss";
 
-export const NavigationBar = ({ showFooter, hideFooter }) => {
+export const NavigationBar = ({ setAppOverFlow, showFooter, hideFooter }) => {
   return (
     <Navbar>
       <div className="page-header">
@@ -25,7 +25,10 @@ export const NavigationBar = ({ showFooter, hideFooter }) => {
               to="about"
               role="menuitem"
               className="navigation-list__item"
-              onClick={showFooter} //sets footer to true in main-view state. shows Footer
+              onClick={() => {
+                showFooter();
+                setAppOverFlow();
+              }} //sets footer to true in main-view state. shows Footer
             >
               About
             </NavLink>
@@ -33,7 +36,10 @@ export const NavigationBar = ({ showFooter, hideFooter }) => {
               to="projects"
               role="menuitem"
               className="navigation-list__item"
-              onClick={showFooter} //sets footer to true in main-view state. shows Footer
+              onClick={() => {
+                showFooter();
+                setAppOverFlow();
+              }} //sets footer to true in main-view state. shows Footer
             >
               Projects
             </NavLink>
