@@ -40,7 +40,7 @@ export const Footer = () => {
           <Icon title="twitter" />
         </a>
         <div>
-          <p className="copywrite">© 2022 Jordan Bettmann</p>
+          <p className="copywrite">© 2023 Jordan Bettmann</p>
         </div>
       </div>
     </Navbar>
