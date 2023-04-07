@@ -36,12 +36,12 @@ export const Homepage = () => {
     setTimeout(() => {
       app.style.overflow = "auto";
       leftButton.style.transition =
-        "transform 200ms ease-in 0s, filter 200ms ease-in 0s";
+        "transform 150ms ease-in 0s, filter 150ms ease-in 0s";
       centerButton.style.transition =
-        "transform 200ms ease-in 0s, filter 200ms ease-in 0s";
+        "transform 150ms ease-in 0s, filter 150ms ease-in 0s";
       rightButton.style.transition =
-        "transform 200ms ease-in 0s, filter 200ms ease-in 0s";
-    }, 6100);
+        "transform 150ms ease-in 0s, filter 150ms ease-in 0s";
+    }, 2000);
   }, []);
 
   return (
@@ -51,9 +51,13 @@ export const Homepage = () => {
           <div ref={welcomingRef} className="homepage__intro hidden__intro">
             <h1>welcome.</h1>
             <p>
-              My name is Jordan Bettmann, I'm a front-end developer from Denver,
-              CO with a background in brewing, business management and graphic
-              design.
+              I'm Jordan, a designer-turned-
+              <span>front-end developer </span>.
+            </p>
+            <p>
+              With a relentless focus on details, I'm constantly infusing a{" "}
+              <span>designer's touch</span> into everything I build. I'm
+              dedicated to bridging the gap between design and programming.
             </p>
           </div>
           <div>

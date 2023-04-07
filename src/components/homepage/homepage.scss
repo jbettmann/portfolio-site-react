@@ -33,12 +33,13 @@ $h1-size: 4rem;
 .homepage__intro {
   transition: transform 1s ease 400ms, opacity 1s ease 400ms;
   p {
-    margin-bottom: 3rem;
+    // line-height: 1.8rem;
+    letter-spacing: 0.02rem;
   }
 }
 
 .get-started {
-  transition: transform 1s ease 2.5s, opacity 1s ease 2.5s;
+  transition: transform 1s ease 2s, opacity 1s ease 2s;
 }
 
 /* index page portrait */
@@ -62,7 +63,6 @@ $h1-size: 4rem;
 #light {
   will-change: transform;
   transition: transform 2s ease 3.5s, opacity 2s ease 3.5s;
-  background-color: lighten($primary-color, 10%);
 }
 .left {
   opacity: 0;
@@ -72,7 +72,6 @@ $h1-size: 4rem;
 #middle {
   will-change: transform;
   transition: transform 2s ease 4.5s, opacity 2s ease 4.5s;
-  background-color: lighten($primary-color, 5%);
 }
 .center {
   opacity: 0;

@@ -65,13 +65,14 @@ export const AboutView = () => {
               </p>
               <p>
                 {/* <!-- Things about me outside of work --> */}
-                <span>Behind the code:</span>
+                <span className="behind-the-code">Behind the code:</span>
                 <br />
                 When not bypassing the mainframe, I’m probably baking and
                 cooking up a storm, flying around Denver's bike trails on my
                 single-speed, searching for the best campsite in existence, or
                 devouring a great fantasy series (Stephen King's
-                <span>The Dark Tower </span>is my current favorite).
+                <span className="behind-the-code">The Dark Tower </span>is my
+                current favorite).
               </p>
               {/* <!-- only displayed on small screens 770px and smaller --> */}
               <div id="about-resume__sm-button">

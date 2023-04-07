@@ -27,7 +27,8 @@ $shadow-hover: hsl(176, 32%, 20%, 0.7);
 }
 
 body {
-  background-color: $main-background-color;
+  color: white;
+  background: radial-gradient(ellipse at bottom, #7e2e97 0%, #3d144a 80%);
   font-family: $body-font, sans-serif;
   font-weight: 300;
   font-size: $body-font-size; /* Sets the font size to 16pz */
@@ -59,7 +60,7 @@ h2 {
 }
 
 a {
-  color: $black;
+  color: $button-font;
   text-decoration: underline;
 }
 
@@ -67,7 +68,6 @@ a:hover,
 a:focus {
   /* Overlining when hovering over a link */
   text-decoration: none;
-  color: $black !important;
 }
 
 a:active {
@@ -76,7 +76,16 @@ a:active {
 }
 
 span {
+  font-weight: 700;
+  background-image: linear-gradient(0.1turn, rgb(0, 243, 194), #03bcff);
+  background-clip: text;
+  color: transparent;
+}
+
+.behind-the-code {
   font-style: italic;
+  background-image: none;
+  color: #fff;
 }
 
 button,
@@ -86,23 +95,24 @@ button,
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 85px;
-  height: 85px;
+  width: 120px;
+  height: 45px;
   /* overwrites browser defaults and resets the border */
   border: none;
   /* takes the font from the outer container */
   font-family: $body-font, sans-serif;
 
   /* styles the background color, font color and text decoration (underline, etc. of the button */
-  background-color: $primary-color;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 9px 2px rgb(71 24 86);
   color: $button-font;
-  filter: drop-shadow(0px 5px 8px $shadow-color);
+  // filter: drop-shadow(0px 5px 8px $shadow-color);
   /* adds spacing to the button (this will be discussed later */
-  padding: 10px 15px;
+  // padding: 10px 15px;
   margin: 10px 5px;
-  border-radius: 50%;
+  border-radius: 20px;
   will-change: transform; // tells browser we will transform for slicker CPU
-  transition: transform 300ms ease-in 0s, filter 300ms ease-in 0s;
+  transition: transform 300ms ease-in 0s, box-shadow 300ms ease-in 0s;
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   // border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 
@@ -111,12 +121,6 @@ button,
     text-decoration: none;
     text-align: center;
     line-height: 1.3;
-    &:hover {
-      color: $button-font !important;
-    }
-    &:focus {
-      color: $button-font !important;
-    }
   }
 }
 .sm-button {
@@ -139,6 +143,8 @@ button:focus,
   /* reduces the opacity of the button to 70% */
   text-decoration: none;
   transition: transform 150ms ease-in-out 0s, filter 150ms ease-in-out 0s;
-  transform: translateY(-5px);
-  filter: drop-shadow(0 15px 8px $shadow-hover);
+  transform: scale(1.03);
+
+  border: solid white;
+  // filter: drop-shadow(0 15px 8px $shadow-hover);
 }
