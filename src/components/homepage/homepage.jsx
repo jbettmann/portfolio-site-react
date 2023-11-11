@@ -45,13 +45,8 @@ export const Homepage = () => {
             ref={welcomingRef}
             className="homepage__intro hidden__intro tw-px-2"
           >
-            <h1
-              ref={getStartedRef}
-              className="get-started hidden tw-text-offBlack "
-            >
-              Frontend Developer
-            </h1>
-            <p className="tw-text-xl">
+            <h1 className=" tw-text-offBlack ">Frontend Developer</h1>
+            <p ref={getStartedRef} className=" get-started hidden tw-text-xl">
               Fusing <span>design</span> with{" "}
               <code className="tw-text-neutral-500">programming</code> through
               intuitive and innovative solutions.
