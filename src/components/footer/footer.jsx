@@ -13,7 +13,10 @@ export const Footer = () => {
   });
   return (
     // <!-- Footer with links to social media profiles -->
-    <Navbar ref={footerRef} className="page-footer hidden tw-pt-[30rem]">
+    <Navbar
+      ref={footerRef}
+      className="page-footer hidden tw-pt-[90rem] lg:tw-pt-[30rem]"
+    >
       <div className="tw-flex ">
         <a
           href="https://github.com/jbettmann"
