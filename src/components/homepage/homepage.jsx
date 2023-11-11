@@ -113,11 +113,14 @@ export const Homepage = () => {
                     <h3> Behind the code</h3>
                   </div>
                   <p>
-                    When not bypassing the mainframe, I’m probably baking and
-                    cooking up a storm, flying around Denver's bike trails on my
-                    single-speed, searching for the best campsite in existence,
-                    or devouring a great fantasy series (Stephen King'sThe Dark
-                    Tower is my current favorite).
+                    When not bypassing the mainframe, You'll probably find me
+                    baking or cooking up a storm, flying around Denver's bike
+                    trails, searching for the best campsite in existence, or
+                    devouring a great fantasy series (Stephen King's{" "}
+                    <span className="tw-font-semibold tw-text-offBlack">
+                      The Dark Tower
+                    </span>{" "}
+                    is my current favorite).
                   </p>
                 </div>
               </div>
