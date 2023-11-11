@@ -4,14 +4,28 @@
 	 viewBox="0 0 136 152.8" style="enable-background:new 0 0 136 152.8;" xml:space="preserve">
  <defs>
     <linearGradient id="myGradient" gradientTransform="rotate(90)">
-      <stop offset="0%" stop-color="rgba(0, 243, 193, 0.62)" />
-      <stop offset="100%" stop-color="#8a18ac" />
+	
+      <stop offset="20%" stop-color="#74d9c9" />
+      <stop offset="100%" stop-color="#21584f" />
       <!-- <stop offset="100%" stop-color="#e826ef" /> -->
+		
     </linearGradient>
+		<linearGradient id="mySecondGradient" gradientTransform="rotate(90)">
+      <stop offset="20%" stop-color="#B644E0" />
+      <stop offset="100%" stop-color="#4f1465" />
+    </linearGradient>
+		<!-- old gradient
+		   <linearGradient id="myGradient" gradientTransform="rotate(90)">
+	
+      <stop offset="0%" stop-color="rgba(0, 243, 193, 0.62)" />
+      <stop offset="100%" stop-color="#8a18ac" /> -->
+      <!-- <stop offset="100%" stop-color="#e826ef" /> 
+		
+   </linearGradient>
 		<linearGradient id="mySecondGradient" gradientTransform="rotate(90)">
       <stop offset="0%" stop-color="#b40cec" />
       <stop offset="100%" stop-color="#e06eff" />
-    </linearGradient>
+    </linearGradient> -->
   </defs>
 <rect x="-317" y="-29" width="241" height="191.5" fill="url(#myGradient)"/>
 
