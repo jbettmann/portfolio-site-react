@@ -13,7 +13,7 @@ module.exports = {
         offBlack: "#1e2010",
       },
       screens: {
-        xxs: "355px",
+        xxs: "364px",
         xs: "450px",
       },
     },
