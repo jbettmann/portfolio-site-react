@@ -13,8 +13,8 @@ export const Footer = () => {
   });
   return (
     // <!-- Footer with links to social media profiles -->
-    <Navbar ref={footerRef} className="page-footer hidden">
-      <div className="social-media">
+    <Navbar ref={footerRef} className="page-footer hidden tw-pt-[30rem]">
+      <div className="tw-flex ">
         <a
           href="https://github.com/jbettmann"
           target="_blank"
@@ -39,9 +39,9 @@ export const Footer = () => {
         >
           <Icon title="twitter" />
         </a>
-        <div>
-          <p className="copywrite">© 2023 Jordan Bettmann</p>
-        </div>
+      </div>
+      <div>
+        <p className="copywrite">© 2023 Jordan Bettmann</p>
       </div>
     </Navbar>
   );

@@ -15,7 +15,7 @@
 .social-media__icon {
   margin: 0 2rem;
   svg {
-    fill: #fff;
+    @apply tw-fill-offBlack;
   }
 }
 
