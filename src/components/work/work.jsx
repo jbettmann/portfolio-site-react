@@ -85,7 +85,7 @@ export const WorkView = () => {
       <Row>
         <Col lg={12}>
           <ModalView show={show} image={image} onHide={() => setShow(false)} />
-          <div>
+          <div className="">
             <div className="work-header">
               <h1>recent work</h1>
             </div>
@@ -107,7 +107,7 @@ export const WorkView = () => {
                     </div>
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
-                  <div className="tw-flex tw-gap-2">
+                  <div className="tw-flex tw-gap-2 tw-flex-wrap">
                     <p className="tags">nextjs</p>
                     <p className="tags">node.js</p>
                     <p className="tags">mongoDB</p>
@@ -184,7 +184,7 @@ export const WorkView = () => {
                     </div>
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
-                  <div className="tw-flex tw-gap-2">
+                  <div className="tw-flex tw-gap-2 tw-flex-wrap">
                     <p className="tags">react</p>
                     <p className="tags">sanity.io</p>
                     <p className="tags">tailwindcss</p>
@@ -260,7 +260,7 @@ export const WorkView = () => {
                     </div>
                   </div>
                   {/* <!-- end of 1000px and smaller screens --> */}
-                  <div className="tw-flex tw-gap-2">
+                  <div className="tw-flex tw-gap-2 tw-flex-wrap">
                     <p className="tags"> react</p>
                     <p className="tags">material ui</p>
                     <p className="tags">react-countdown</p>

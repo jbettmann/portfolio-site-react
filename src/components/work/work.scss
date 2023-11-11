@@ -142,19 +142,16 @@ $header-font-weight: 700;
 }
 
 .grid__link {
-  display: inline-flex;
+  @apply tw-flex tw-flex-col xxs:tw-flex-row;
   align-items: center;
   padding-left: 0.5rem;
   gap: 0.5rem;
 }
 
 .grid__link-reverse {
-  display: inline-flex;
-  flex-direction: row-reverse;
+  @apply tw-flex tw-flex-col tw-w-full xxs:tw-items-center xxs:tw-flex-row;
 
-  align-items: center;
-  padding-right: 0.5rem;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .grid__img-sm {
@@ -336,7 +333,7 @@ img {
     =================================== */
 @media all and (max-width: 1050px) {
   .grid {
-    grid-gap: 40px;
+    grid-gap: 7rem;
   }
   .grid__img {
     display: none;
