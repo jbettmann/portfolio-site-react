@@ -9,7 +9,7 @@ $light-gray: #d6d6d6;
 $black: #000;
 $teal: #22bdc4;
 $body-font: "Lato";
-$header-font: "Roboto";
+$header-font: "Mona Sans Regular";
 $body-font-size: 16px;
 $body-font-small: 14px;
 $icon-size: 12px;
@@ -17,7 +17,7 @@ $header-font-size: 30px;
 $secondary-header-font-size: 20px;
 $nav-font-size: 18px;
 $body-font-weight: 400;
-$header-font-weight: 500;
+$header-font-weight: 300;
 $button-font: #fff;
 
 * {
@@ -100,20 +100,6 @@ $button-font: #fff;
   border: solid white;
 }
 
-.navigation-list__item.active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: $button-font;
-  width: 120px;
-  height: 45px;
-  background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 0 9px 2px rgb(71 24 86);
-  border-radius: 20px;
-  will-change: transform; // tells browser we will transform for slicker CPU
-  transition: transform 150ms ease-in-out 0s, filter 150ms ease-in-out 0s;
-}
 /* BOOTSTRAP OVERRIDE */
 
 .navbar-nav {

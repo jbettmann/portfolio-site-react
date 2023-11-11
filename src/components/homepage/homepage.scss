@@ -14,12 +14,16 @@ $h1-size: 4rem;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 518px;
+
   margin-bottom: 2rem;
 }
 .hidden__intro {
   opacity: 0;
   transform: translateY(-8rem);
+}
+p {
+  @apply tw-text-base xxs:tw-text-lg;
+  font-family: "Mona Sans Regular";
 }
 
 .hidden {
@@ -27,10 +31,8 @@ $h1-size: 4rem;
   transform: translateY(8rem);
 }
 
-.homepage__intro h1 {
-  font-size: $h1-size;
-}
 .homepage__intro {
+  @apply tw-flex tw-flex-col tw-gap-3;
   transition: transform 1s ease 400ms, opacity 1s ease 400ms;
   p {
     // line-height: 1.8rem;
@@ -85,6 +87,42 @@ $h1-size: 4rem;
 .right {
   opacity: 0;
   transform: translate3d(400px, 450px, 0);
+}
+
+.card-container {
+  perspective: 1000px; /* Adjust as needed */
+}
+
+.card-inner {
+  transition: transform 0.6s; /* Adjust time as needed */
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.card-front,
+.card-back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform-origin: center; /* Ensures flip around the center */
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.frontend__item {
+  svg {
+    fill: #fff;
+    width: 50%;
+  }
 }
 
 /* ===================================

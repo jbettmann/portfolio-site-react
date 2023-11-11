@@ -23,32 +23,17 @@ export const NavigationBar = ({ setAppOverFlow, showFooter, hideFooter }) => {
           <Nav className="navigation-list">
             <div className="navigation">
               <NavLink
-                to="about"
-                role="menuitem"
-                className="navigation-list__item"
-                onClick={() => {
-                  showFooter();
-                  setAppOverFlow();
-                }} //sets footer to true in main-view state. shows Footer
-              >
-                About
-              </NavLink>
-              <NavLink
                 to="projects"
                 role="menuitem"
-                className="navigation-list__item"
+                className="main-link "
                 onClick={() => {
                   showFooter();
                   setAppOverFlow();
                 }} //sets footer to true in main-view state. shows Footer
               >
-                Projects
+                Work
               </NavLink>
-              <NavLink
-                to="contact"
-                role="menuitem"
-                className="navigation-list__item"
-              >
+              <NavLink to="contact" role="menuitem" className="main-link ">
                 Contact
               </NavLink>
             </div>
