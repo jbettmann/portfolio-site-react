@@ -19,14 +19,15 @@ $black: #000;
 }
 
 .contact-icons {
-  display: flex;
+  @apply tw-gap-3  tw-grid tw-grid-cols-2 xxs:tw-flex xs:tw-gap-3;
+
   justify-content: center;
+
   margin-top: 30px;
 }
 
 .social-icons {
-  fill: $main-background-color;
-  margin: 0 2rem;
+  @apply tw-fill-primary tw-border tw-border-primary tw-rounded-xl tw-flex  tw-justify-center tw-items-center hover:tw-bg-primary hover:tw-fill-white;
 }
 
 /* ====================================================
