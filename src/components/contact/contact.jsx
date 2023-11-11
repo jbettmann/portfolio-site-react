@@ -20,7 +20,10 @@ export const ContactView = ({ hideFooter }) => {
               Jordan Bettmann
               <br />
               {/* <!--Sends Email--> */}
-              <a href="mailto:hello@jordanbettmann.com">
+              <a
+                href="mailto:hello@jordanbettmann.com"
+                className="tw-text-secondary"
+              >
                 hello@jordanbettmann.com
               </a>
             </p>
@@ -39,6 +42,7 @@ export const ContactView = ({ hideFooter }) => {
                 target="_blank"
                 className="social-icons button sm-button"
                 id="twitter"
+                rel="noreferrer"
               >
                 <Icon title="twitter" />
               </a>
@@ -48,6 +52,7 @@ export const ContactView = ({ hideFooter }) => {
                 target="_blank"
                 className="social-icons button sm-button"
                 id="github"
+                rel="noreferrer"
               >
                 <Icon title="github-social" />
               </a>
@@ -57,6 +62,7 @@ export const ContactView = ({ hideFooter }) => {
                 target="_blank"
                 className="social-icons button sm-button"
                 id="linked-in"
+                rel="noreferrer"
               >
                 <Icon title="linkedin" />
               </a>

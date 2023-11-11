@@ -41,7 +41,10 @@ export const Homepage = () => {
     <Container>
       <main className="homepage">
         <div className="homepage__content tw-gap-64 xs:tw-gap-72  xl:tw-gap-96">
-          <div ref={welcomingRef} className="homepage__intro hidden__intro">
+          <div
+            ref={welcomingRef}
+            className="homepage__intro hidden__intro tw-px-2"
+          >
             <h1
               ref={getStartedRef}
               className="get-started hidden tw-text-offBlack "
