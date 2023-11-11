@@ -171,7 +171,7 @@ export const Homepage = () => {
                       Languages & CMS
                     </h2>
                     <div className="tw-flex tw-flex-wrap tw-justify-center tw-items-center tw-gap-2">
-                      <p>Node.js,</p> <p>Git,</p> <p>Express,</p>
+                      <p>Node.js,</p> <p>Express,</p>
                       <p>Sanity.io,</p> <p>Wordpress,</p> <p>Shopify</p>
                     </div>
                   </div>
@@ -182,7 +182,7 @@ export const Homepage = () => {
                     <div className="tw-flex tw-flex-col tw-gap-2">
                       <p>MongoDB</p>
                       <p>AWS</p> <p>SQL</p> <p>NoSQL</p>
-                      <p>RESTful APIs</p> <p>Git</p> <p>Vercel</p>
+                      <p>RESTful APIs</p> <p>GitHub</p> <p>Vercel</p>
                     </div>
                   </div>
                 </div>
