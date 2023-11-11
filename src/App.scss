@@ -1,8 +1,48 @@
 @import "~bootstrap/scss/bootstrap";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz@8..60&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 $fire: "./img/fire.jpeg";
 
+@font-face {
+  font-family: "Mona Sans Regular";
+  src: url("./files/Fonts/Mona_Sans/TTF/MonaSans-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mona Sans Regular";
+  src: url("./files/Fonts/Mona_Sans/TTF/MonaSans-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mona Sans Regular";
+  src: url("./files/Fonts/Mona_Sans/TTF/MonaSans-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mona Sans Regular";
+  src: url("./files/Fonts/Mona_Sans/TTF/MonaSans-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Mona Sans Regular";
+  src: url("./files/Fonts/Mona_Sans/TTF/MonaSans-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
 .App {
+  @apply tw-font-sans  tw-bg-neutral-50;
+
+  color: rgb(15, 15, 15);
+  font-family: "Mona Sans Regular", sans-serif;
   width: 100vw;
   height: 100vh;
   padding: 1rem 2rem;
