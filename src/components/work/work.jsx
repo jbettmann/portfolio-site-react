@@ -68,7 +68,7 @@ export const WorkView = () => {
       entry.target.src = entry.target.dataset.src;
       // listen for larger img to load
       entry.target.addEventListener("load", () => {
-        entry.target.classList.remove("lazy-img");
+        entry.target.classList.remove("lazy-img_work");
       });
       // stop observing once in view
       observer.unobserve(entry.target);
@@ -179,7 +179,7 @@ export const WorkView = () => {
                         src={storeyHomepageLazy}
                         data-src={storeyHomepage}
                         alt="Motz-Storey Real Estate"
-                        className=" tw-w-full tw-h-full tw-rounded-lg"
+                        className="tw-w-full tw-h-full tw-object-cover tw-rounded-lg"
                       />
                     </div>
                   </div>
@@ -236,7 +236,7 @@ export const WorkView = () => {
                       src={storeyHomepageLazy}
                       data-src={storeyHomepage}
                       alt="Motz-Storey Real Estate"
-                      className="tw-w-full tw-h-full tw-object-cover tw-rounded-lg"
+                      className="tw-w-full tw-h-full tw-object-cover tw-rounded-lg lazy-img_work"
                     />
                   </div>
                 </div>
@@ -255,7 +255,7 @@ export const WorkView = () => {
                         src={brewAssitLazy}
                         data-src={brewAssit}
                         alt="Brew Bud"
-                        className=" tw-w-full tw-h-full tw-rounded-lg"
+                        className=" tw-w-full tw-h-full tw-rounded-lg lazy-img_work"
                       />
                     </div>
                   </div>
@@ -311,7 +311,7 @@ export const WorkView = () => {
                       src={brewAssitLazy}
                       data-src={brewAssit}
                       alt="Brew Bud"
-                      className="tw-w-full tw-h-full tw-object-cover tw-rounded-lg"
+                      className="tw-w-full tw-h-full tw-object-cover tw-rounded-lg lazy-img_work"
                     />
                   </div>
                 </div>
@@ -329,7 +329,7 @@ export const WorkView = () => {
                     <img
                       src={myFlix_Angular_lazy}
                       data-src={myFlix_Angular}
-                      className="lazy-img"
+                      className="lazy-img_work"
                       alt="myFlix Angular App"
                       onClick={getImage}
                     />
@@ -368,7 +368,7 @@ export const WorkView = () => {
                   <img
                     src={myFlix_Angular_lazy}
                     data-src={myFlix_Angular}
-                    className="lazy-img"
+                    className="lazy-img_work"
                     alt="myFlix Angular App"
                     onClick={getImage}
                   />
@@ -385,7 +385,7 @@ export const WorkView = () => {
                       src={chatApp_lazy}
                       data-src={chatApp}
                       alt="Chat App"
-                      className="chat-app_height lazy-img"
+                      className="chat-app_height lazy-img_work"
                       onClick={getImage}
                     />
                   </div>
@@ -414,7 +414,7 @@ export const WorkView = () => {
                     src={chatApp_lazy}
                     data-src={chatApp}
                     alt="Chat App"
-                    className="chat-app_height lazy-img"
+                    className="chat-app_height lazy-img_work"
                     onClick={getImage}
                   />
                 </div>
@@ -430,7 +430,7 @@ export const WorkView = () => {
                     <img
                       src={myFlix_database_lazy}
                       data-src={myFlix_database}
-                      className="lazy-img"
+                      className="lazy-img_work"
                       alt="myFlix-API tested in Postman"
                       onClick={getImage}
                     />
@@ -460,7 +460,7 @@ export const WorkView = () => {
                   <img
                     src={myFlix_database_lazy}
                     data-src={myFlix_database}
-                    className="lazy-img"
+                    className="lazy-img_work"
                     alt="myFlix-API tested in Postman"
                     onClick={getImage}
                   />
@@ -476,7 +476,7 @@ export const WorkView = () => {
                     <img
                       src={myFlix_React_lazy}
                       data-src={myFlix_React}
-                      className="lazy-img"
+                      className="lazy-img_work"
                       alt="myFlix React"
                       onClick={getImage}
                     />
@@ -517,7 +517,7 @@ export const WorkView = () => {
                   <img
                     src={myFlix_React_lazy}
                     data-src={myFlix_React}
-                    className="lazy-img"
+                    className="lazy-img_work"
                     alt="myFlix React"
                     onClick={getImage}
                   />
@@ -534,7 +534,7 @@ export const WorkView = () => {
                     <img
                       src={pokedex_lazy}
                       data-src={pokedex}
-                      className="lazy-img"
+                      className="lazy-img_work"
                       alt="PokeDex"
                       onClick={getImage}
                     />
@@ -570,7 +570,7 @@ export const WorkView = () => {
                   <img
                     src={pokedex_lazy}
                     data-src={pokedex}
-                    className="lazy-img"
+                    className="lazy-img_work"
                     alt="PokeDex"
                     onClick={getImage}
                   />
