@@ -127,6 +127,25 @@ export const WorkView = () => {
                       hospitality environment, Brett delivers a responsive and
                       intuitive user interface.
                     </p>
+                    <div className="tw-flex tw-flex-col tw-gap-2 w-[90%] ">
+                      <h5 className=" tw-text-lg tw-font-medium brett-try__banner tw-px-2 tw-py-1 tw-rounded-xl ">
+                        Try it out
+                      </h5>
+                      <div className="tw-flex tw-gap-6  tw-px-2">
+                        <div>
+                          <p className="tw-text-md">Email</p>
+                          <p className="tw-text-md">Password</p>
+                        </div>
+                        <div>
+                          <p className="tw-font-medium tw-text-primary">
+                            test@gmail.com
+                          </p>
+                          <p className="tw-font-medium tw-text-primary">
+                            password1
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
                   <div className="grid__link-reverse">

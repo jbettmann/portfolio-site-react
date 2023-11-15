@@ -28,8 +28,12 @@ $header-font-weight: 700;
     0.1turn,
     #61406a 20%,
     rgba(166, 108, 182, 0.97),
-    rgba(223, 169, 238, 0.97)
+    #dfa9eef7
   );
+}
+
+.brett-try__banner {
+  background: linear-gradient(0.9turn, #c6e7f5 0%, #95e3d5);
 }
 
 .storey-img__container {
