@@ -14,7 +14,7 @@ export const ModalView = ({ show, image, onHide }) => {
       {image.className === "chat-app_height" ? (
         <Modal
           show={show}
-          size="sm"
+          size="lg"
           aria-labelledby="contained-modal-title-vcenter"
           onHide={onHide}
         >
