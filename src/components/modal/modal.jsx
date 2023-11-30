@@ -11,33 +11,13 @@ export const ModalView = ({ show, image, onHide }) => {
   console.log({ image });
   return (
     <>
-      {image.className === "chat-app_height" ? (
+      {image && (
         <Modal
           show={show}
-          size="lg"
           aria-labelledby="contained-modal-title-vcenter"
           onHide={onHide}
-        >
-          <Modal.Header closeButton>
-            <Modal.Title id="contained-modal-title-vcenter">
-              {image.alt}
-            </Modal.Title>
-          </Modal.Header>
-          <Modal.Body id="body">
-            <img id="modal-image" src={image.src} alt={image.alt} />
-          </Modal.Body>
-          <Modal.Footer>
-            <button className="main-btn tw-shadow-none " onClick={onHide}>
-              Close
-            </button>
-          </Modal.Footer>
-        </Modal>
-      ) : (
-        <Modal
-          show={show}
-          size="lg"
-          aria-labelledby="contained-modal-title-vcenter"
-          onHide={onHide}
+          size={image.alt === "BrewAssit" ? "lg" : "xl"}
+          centered
         >
           <Modal.Header closeButton>
             <Modal.Title

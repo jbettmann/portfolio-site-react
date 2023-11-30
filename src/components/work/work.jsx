@@ -273,7 +273,7 @@ export const WorkView = () => {
                       <img
                         src={brewAssitLazy}
                         data-src={brewAssit}
-                        alt="Brew Bud"
+                        alt="BrewAssit"
                         className=" tw-w-full tw-h-full tw-rounded-lg lazy-img_work"
                       />
                     </div>
@@ -329,7 +329,7 @@ export const WorkView = () => {
                     <img
                       src={brewAssitLazy}
                       data-src={brewAssit}
-                      alt="Brew Bud"
+                      alt="BrewAssit"
                       className="tw-w-full tw-h-full tw-object-cover tw-rounded-lg lazy-img_work"
                     />
                   </div>
