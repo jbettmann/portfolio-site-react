@@ -58,6 +58,9 @@ export const Homepage = () => {
               src={gordev}
               alt="Illustration of Jordan at my desk coding"
               className="tw-absolute tw-translate-y-[-50%] tw-translate-x-[-50%] tw-top-[-6%] tw-left-1/2 tw-z-10 tw-w-full  xs:tw-w-3/4  sm:tw-w-2/3 md:tw-w-1/2 lg:tw-w-5/12 tw-max-w-2xl tw-p-6  tw-rounded-lg"
+              loading="lazy"
+              width={1024}
+              height={864}
             />
 
             <div

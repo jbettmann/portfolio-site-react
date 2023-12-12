@@ -103,6 +103,7 @@ export const WorkView = () => {
                         data-src={brettHomepage}
                         alt="Brett App"
                         className=" tw-w-full tw-h-full tw-rounded-lg"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -180,6 +181,7 @@ export const WorkView = () => {
                       data-src={brettHomepage}
                       alt="Brett App"
                       className="tw-w-full tw-h-full tw-object-cover tw-rounded-lg"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -199,6 +201,7 @@ export const WorkView = () => {
                         data-src={storeyHomepage}
                         alt="Motz-Storey Real Estate"
                         className="tw-w-full tw-h-full tw-object-cover tw-rounded-lg"
+                        loading="lazy"
                       />
                     </div>
                   </div>
@@ -254,6 +257,7 @@ export const WorkView = () => {
                     <img
                       src={storeyHomepageLazy}
                       data-src={storeyHomepage}
+                      loading="lazy"
                       alt="Motz-Storey Real Estate"
                       className="tw-w-full tw-h-full tw-object-cover tw-rounded-lg lazy-img_work"
                     />
@@ -273,6 +277,7 @@ export const WorkView = () => {
                       <img
                         src={brewAssitLazy}
                         data-src={brewAssit}
+                        loading="lazy"
                         alt="BrewAssit"
                         className=" tw-w-full tw-h-full tw-rounded-lg lazy-img_work"
                       />
@@ -329,6 +334,7 @@ export const WorkView = () => {
                     <img
                       src={brewAssitLazy}
                       data-src={brewAssit}
+                      loading="lazy"
                       alt="BrewAssit"
                       className="tw-w-full tw-h-full tw-object-cover tw-rounded-lg lazy-img_work"
                     />
